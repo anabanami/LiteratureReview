@@ -1,0 +1,201 @@
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% latexmk -pvc -pdf
+\documentclass[12pt, a4paper]{report}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{titlesec}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{mathtools}
+\usepackage{braket}
+\usepackage{dsfont}
+\usepackage[font=scriptsize,labelfont=bf]{caption}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\newenvironment{Figure}
+    {\par\medskip\noindent\minipage{\linewidth}}
+    {\endminipage\par\medskip}
+\usepackage{blindtext}
+
+% Colours:
+\usepackage[table]{xcolor}
+\definecolor{purple}{RGB}{117,77,226}
+
+\usepackage[bookmarksopen,
+  pagebackref,
+  pdfpagelayout=TwoPageRight,
+  colorlinks=true,
+  urlcolor=purple,
+  citecolor=purple,
+  filecolor=purple,
+  linkcolor=purple,
+  urlcolor=purple,
+  citecolor=purple,
+  filecolor=purple,
+  linkcolor=purple,
+  linktocpage=true
+  ]
+{hyperref}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge}
+
+\newcommand\II{\(\mathcal{I}\)}
+\newcommand\PT{\(\mathcal{PT}\)}
+\newcommand\PP{\(\mathcal{P}\)}
+\newcommand\TT{\(\mathcal{T}\)}
+\newcommand\CPT{\(\mathcal{CPT}\)}
+\newcommand\CC{\(\mathcal{C}\)}
+
+%----------------------------------------------------------------------------------------
+%   TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+
+
+\vspace{1cm}
+\textsc{Honours Literature review}
+\vspace{2.5cm}
+
+{\Huge \( \mathcal{PT} \)-symmetric quantum mechanics}
+\vspace{3cm}
+
+{\LARGE Ana Fabela Hinojosa \footnote{acfab1@student.monash.edu.au}} \\
+\vspace{0.4cm}
+{\Large Supervisors:\\ Dr. Jesper Levinsen \\ Prof. Meera Parish \\}
+\textsc{School of Physics \& Astronomy} \\
+\vspace{3cm}
+\includegraphics[scale=0.2]{logo.jpg} \\ % University logo
+\vspace{3cm}
+{\LARGE August 2022}\\
+\vspace{0.5cm}
+\end{center}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%   QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+% \vspace*{0.2\textheight}
+
+% \noindent{``How do you know I’m mad?'' said Alice.
+
+% ``You must be,'' said the Cat, ``or you wouldn't have come here.''}\bigbreak
+
+% \hfill  Lewis Carroll, Alice in Wonderland 
+
+% \vspace{20cm}
+%%----------------------------------------------------------------------------------------
+%%   LIST OF CONTENTS/FIGURES/TABLES PAGES
+%%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+% \vspace{20cm}
+
+%\listoffigures % Prints the list of figures
+
+%\vspace{20cm}
+
+%% \listoftables % Prints the list of tables
+
+% %----------------------------------------------------------------------------------------
+% %  CONTENTS
+% %----------------------------------------------------------------------------------------
+
+\begin{abstract}\label{Abstract}
+\end{abstract}
+%Quantum mechanical operators must satisfy a set of properties which deem them suitable as observable dynamical variables in nature. Observers use operators to measure some qualities of a system (such as for example a system's total energy) and come to a real valued finite answer.\\
+
+\chapter{Introduction}\label{Introduction}
+This work reflects on a possible extension to the canonical formalism of quantum mechanics. The main goal of this extension is to allow us to access a much larger class of interesting Hamiltonians which are non-Hermitian but nevertheless, physical and therefore possibly of great importance to the advancement of new and physically significant theories.\\
+In ``The principles of quantum mechanics", Paul Dirac advises us that``it is important to remember that science is concerned only with \textit{observable} things and that we can observe an object only by letting it interact with some outside influence"\cite{POQM}. This means that in order to study valid physical systems, these systems must satisfy the fundamental postulates of quantum mechanical theory. Nearly all these postulates are based in physical properties. For example, one postulate establishes that time evolution of a quantum system must be \textit{unitary} (i.e. probability conserving), another requires that the energy spectrum of the system is bounded below so a lowest energy state can be measured. In quantum mechanics, the Hamiltonian operator $(\hat{H})$ encapsulates the total energy of a system. As explained already, a system's energy spectrum is required to be bounded and real in order to be measurable. According to the fundamental axioms, if the operator $\hat{H}$ satisfies the mathematical property known as Hermiticity (these operators are also known as self-adjoint in mathematics), then $\hat{H}$ will be an adequate physical observable. Interestingly, the Hermiticity postulate stands out from others in the conventional theory of quantum mechanics because it is mathematical rather than physical in its character\cite{MakingSense}.
+An operator $\hat{O}$ that is Hermitian has the property that its effect on the vectors of the Hilbert space in which $\hat{O}$ is defined is independent of the order in which $\hat{O}$ acts on said vectors\cite{Jones-Smith}
+\begin{equation}\label{eq:1}
+\hat{O}\ket{\psi} = \bra{\psi}\hat{O}^{\dagger}
+\end{equation}
+Despite of the correctness of Hermiticity, since this property depends on the definition of the inner-product used, some believe that perhaps we have ended up with an overly restrictive quantum mechanical theory.  
+The aim of this review is to summarize the present developments of a more physical alternative to Hermiticity. This postulate is referred to as space–time reflection symmetry (\PT\:symmetry)\cite{MustaHbeHermitian}. 
+
+\section{\texorpdfstring{$\mathcal{PT}$}\:-symmetry}\label{PT}
+In the late nineties, Carl Bender et al presented a \PT-symmetric theory of quantum mechanics, their aim was to explain a conjecture on the reality and positiveness of the spectrum of a non-Hermitian Hamiltonian proposed by Bessis\cite{Bender1998}. This new \PT-symmetric theory can be viewed as an analytical continuation of the conventional theory from real into the complex phase space\cite{PT-symmetricQM}.
+
+The critical question that must be answered, is whether a \PT-symmetric Hamiltonian defines a valid physical theory of quantum mechanics. By a physical theory we mean that the energy spectra of a system described by $\hat{H}$ must be real and bounded below, and since the norm of a state is interpreted as a probability, this norm must be positive. Finally, we must show that the time evolution of the theory is unitary. This means that as a state vector evolves in time the state's probability does not leak away\cite{MustaHbeHermitian}\cite{MakingSense}.
+
+\subsection{The \texorpdfstring{$\mathcal{PT}$}\: operator}
+The \PT\:operator is the anti-linear operator composed of the linear parity operator (\PP), which performs spatial reflection, and the anti-linear time-reversal operator (\TT). These operators act on position and momentum operators in the following form
+\begin{equation}\label{eq:2}
+\begin{split}
+\mathcal{P}:& \quad\hat{x} \rightarrow -\hat{x},\quad \hat{p} \rightarrow -\hat{p},\\
+\mathcal{T}:& \quad\hat{x} \rightarrow \hat{x},\quad\quad \hat{p} \rightarrow -\hat{p},\quad \mathrm{i} \rightarrow -\mathrm{i}.
+\end{split}
+\end{equation}
+Some Hamiltonians may not be symmetric under \PP\:or \TT\:separately, but Hamiltonians that remain invariant under the influence of the antilinear \PT\:operator are labelled as \PT-symmetric. A Hamiltonian will possess unbroken \PT\:symmetry if it's eigenfunctions $\psi_n(x)$ are simultaneously eigenstates of the \PT\: operator, otherwise we say that the symmetry is broken\cite{MakingSense}\cite{ComplexExtension}\cite{MustaHbeHermitian}. If the symmetry is unbroken, then the eigenspectrum of $\hat{H}$ is fully real and bounded below. The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been proved rigorously in various works, such as Dorey et al\cite{Dorey_2001}, Bender and Boettcher\cite{Bender1998}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PT-symmetricQM}, Mostafazadeh\cite{Mostafazadeh}\cite{Mostafazadeh2}. 
+
+\subsection{The \texorpdfstring{$\mathcal{CPT}$}\:\:inner product}\label{CPT}
+To be able to describe precisely the nature of \PT-symmetric quantum mechanics, we must delve briefly into the inner-product under which our theory satisfies the axioms of conventional quantum mechanics. It is important to note that \PT-symmetric quantum mechanics is a kind of `bootstrap' theory\cite{MakingSense}, since infinitely many inner-products exist for a given vector space, we can construct an inner product whose associated norm is positive definite, this inner-product is in general dependent on the characteristics of the Hamiltonian in question and it guarantees that the underlying dynamics of any \PT-symmetric Hamiltonian satisfies unitarity\cite{MustaHbeHermitian}.
+Firstly, it is necessary to solve for the eigenstates of the Hamiltonian before knowing the Hilbert space and the associated inner product.
+To guarantee a positive norm for our theory, we will construct a new linear operator \CC that commutes with both the Hamiltonian $(\hat{H})$ and \PT, we use the symbol \CC\: to represent this symmetry because it's properties are similar to those of the charge conjugation operator in particle physics\cite{MakingSense}.
+
+% \subsubsection{The $\mathcal{C}$ operator}\label{CC}
+\begin{equation}\label{eq:3}
+\braket{\psi|\chi}^{\mathcal{CPT}} = \int dx\,\psi^{\mathcal{CPT}}(x) \chi(x)
+\end{equation}
+
+
+
+% \PT\:symmetry is a dynamic property of a Hamiltonian $(\hat{H})$, in the sense that it is strongly dependent on the boundary conditions implemented on the eigenfunctions of $\hat{H}$.
+
+
+% Let us consider the family of parametric Hamiltonians possessing \PT\:symmetry
+% \begin{equation}\label{eq:4}
+% \hat{H} = \hat{p}^2 + \hat{x}^{2}(i x)^{\epsilon} \quad\quad (\epsilon\:\mathrm{real}). 
+% \end{equation}
+% The Hamiltonian in \ref{eq:4} has unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT\:symmetry when $\epsilon < 0$. The energy spectrum of \ref{eq:4} has been proved to be real and bounded below in the region of unbroken \PT\:symmetry \cite{Dorey_2004}. 
+% This particular family of Hamiltonians is useful to us as an example because we can demonstrate how by carefully choosing the boundary conditions associated with its eigenvalue problem  
+% \begin{equation}\label{eq:5}
+%  -\psi''_{n}(x) + x^2(ix)^{\epsilon}\psi_n(x) = E_n \psi_n(x), 
+% \end{equation}
+% where for $\epsilon\geq 0$ and for $x$ located in an infinite contour in the complex-x plane, $\psi(x) \rightarrow 0$ exponentially rapidly as $|x| \rightarrow \infty$. 
+
+% There is evidence that suggests that, when properly normalised, the eigenfunctions $\psi(x)$ form a complete set\cite{MustaHbeHermitian}.
+
+
+
+
+% \subsection{Stokes wedges and boundary conditions}\label{BCS}
+% The class of \PT-symmetric Hamiltonians is larger than and includes Hermitian Hamiltonians because any real symmetric Hamiltonian is automatically \PT-symmetric\cite{MustaHbeHermitian}
+
+\chapter{Time evolution}\label{TEv}
+% We call $U = e^{−i\hat{H}t} the time-evolution operator. In conventional quantum mechanics the time-evolution operator is unitary because the Hamiltonian $$\hat{H}$$ is Hermitian. As a result, the norm of the state $\psi(t)$ remains constant in time. The constancy of the norm is an essential feature of a quantum system because the norm of a state is a probability, and this probability must remain constant in time. If this probability were to grow or decay in time, we would say that the theory violates unitarity. In PT -symmetric quantum mechanics $\hat{H}$ is not Dirac Hermitian, but the norms of states are still time independent\cite{MakingSense}.
+
+% \begin{equation}\label{eq:}
+% \begin{split}
+
+% \end{split}
+% \end{equation}
+
+\chapter{Consequences and applications}\label{Consq}
+% Do I clearly present my theme(s) ?
+    % bigpicture
+
+% What aspects have not been investigated? 
+
+% What are the most recent findings? 
+
+% What gaps in research have I found? 
+
+% How do I my readings and observations to accomplish that? 
+
+
+
+\chapter{Conclusion}\label{Conclusion}
+
+\bibliographystyle{unsrturl_mod}
+\bibliography{mybib}
+
+\end{document}
