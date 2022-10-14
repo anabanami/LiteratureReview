@@ -112,19 +112,19 @@
 %Quantum mechanical operators must satisfy a set of properties which deem them suitable as observable dynamical variables in nature. Observers use operators to measure some qualities of a system (such as for example a system's total energy) and come to a real valued finite answer.\\
 
 \chapter{Introduction}\label{Introduction}
-This work reflects on a possible extension to the canonical formalism of quantum mechanics. The main goal of this extension is to allow us to access a much larger class of interesting Hamiltonians which are non-Hermitian but nevertheless, physical and therefore possibly of great importance to the advancement of new and physically significant theories.\\
-In ``The principles of quantum mechanics", Paul Dirac advises us that``it is important to remember that science is concerned only with \textit{observable} things and that we can observe an object only by letting it interact with some outside influence"\cite{POQM}. This means that in order to study valid physical systems, these systems must satisfy the fundamental postulates of quantum mechanical theory. Nearly all these postulates are based in physical properties. For example, one postulate establishes that time evolution of a quantum system must be \textit{unitary} (i.e. probability conserving), another requires that the energy spectrum of the system is bounded below so a lowest energy state can be measured. In quantum mechanics, the Hamiltonian operator $(\hat{H})$ encapsulates the total energy of a system. As explained already, a system's energy spectrum is required to be bounded and real in order to be measurable. According to the fundamental axioms, if the operator $\hat{H}$ satisfies the mathematical property known as Hermiticity (these operators are also known as self-adjoint in mathematics), then $\hat{H}$ will be an adequate physical observable. Interestingly, the Hermiticity postulate stands out from others in the conventional theory of quantum mechanics because it is mathematical rather than physical in its character\cite{MakingSense}.
+This work reflects on a possible extension to the canonical formalism of quantum mechanics. The main goal of this extension is to allow us to access a much larger class of interesting Hamiltonians which are non-Hermitian but nevertheless physical.This extension has the potential to be of great importance to the advancement of new and physically significant theories.\\
+In ``The principles of quantum mechanics", Paul Dirac advises us that``it is important to remember that science is concerned only with \textit{observable} things and that we can observe an object only by letting it interact with some outside influence"\cite{POQM}. This means that in order to study valid physical systems, these systems must satisfy the fundamental postulates of quantum mechanical theory. Nearly all these postulates are based in physical properties. For example, one postulate establishes that time evolution of a quantum system must be \textit{unitary} (i.e. probability conserving). Another requires that the energy spectrum of the system is bounded below so a lowest energy state can be measured. In quantum mechanics, the Hamiltonian operator $(\hat{H})$ encapsulates the total energy of a system. As explained already, a system's energy spectrum is required to be bounded and real in order to be measurable. According to the fundamental postulates of the standard theory, if the operator $\hat{H}$ satisfies the mathematical property known as Hermiticity --these operators are also known as self-adjoint in mathematics--, then $\hat{H}$ will be an adequate physical observable. Interestingly, the Hermiticity postulate stands out from others in the conventional theory of quantum mechanics because it is mathematical rather than physical in its character\cite{MakingSense}.
 An operator $\hat{O}$ that is Hermitian has the property that its effect on the vectors of the Hilbert space in which $\hat{O}$ is defined is independent of the order in which $\hat{O}$ acts on said vectors\cite{Jones-Smith}
 \begin{equation}\label{eq:1}
-\hat{O}\ket{\psi} = \bra{\psi}\hat{O}^{\dagger}
+\hat{O}\ket{\psi} = \bra{\psi}\hat{O}^{\dagger}.
 \end{equation}
-Despite of the correctness of Hermiticity, since this property depends on the definition of the inner-product used, some believe that perhaps we have ended up with an overly restrictive quantum mechanical theory.  
-The aim of this review is to summarize the present developments of a more physical alternative to Hermiticity. This postulate is referred to as space–time reflection symmetry (\PT\:symmetry)\cite{MustaHbeHermitian}. 
+Despite of the correctness of Hermiticity, some believe that perhaps we have ended up with an overly restrictive quantum theory.  
+The aim of this review is to summarize the present developments of a more physical alternative to Hermiticity. This alternative postulate is referred to as space–time reflection symmetry (\PT\:symmetry)\cite{MustaHbeHermitian}. 
 
 \section{\texorpdfstring{$\mathcal{PT}$}\:-symmetry}\label{PT}
-In the late nineties, Carl Bender et al presented a \PT-symmetric theory of quantum mechanics, their aim was to explain a conjecture on the reality and positiveness of the spectrum of a non-Hermitian Hamiltonian proposed by Bessis\cite{Bender1998}. This new \PT-symmetric theory can be viewed as an analytical continuation of the conventional theory from real into the complex phase space\cite{PT-symmetricQM}.
+In the late nineties, Carl Bender et al presented a \PT-symmetric theory of quantum mechanics. Their aim was to explain a conjecture on the reality and positiveness of the spectrum of a non-Hermitian Hamiltonian proposed by Bessis\cite{Bender1998}. \PT-symmetric theory can be viewed as an analytical continuation of the conventional theory from real into the complex phase space\cite{PT-symmetricQM}.
 
-The critical question that must be answered, is whether a \PT-symmetric Hamiltonian defines a valid physical theory of quantum mechanics. By a physical theory we mean that the energy spectra of a system described by $\hat{H}$ must be real and bounded below, and since the norm of a state is interpreted as a probability, this norm must be positive. Finally, we must show that the time evolution of the theory is unitary. This means that as a state vector evolves in time the state's probability does not leak away\cite{MustaHbeHermitian}\cite{MakingSense}.
+An important question that must be answered, is whether a \PT-symmetric Hamiltonian defines a valid physical theory of quantum mechanics. By a physical theory we mean that the following conditions must be satisfied; The energy spectra of a system described by $\hat{H}$ must be real and bounded below. Another condition is related to the probabilistic interpretation of the norm of a state, a norm must be always positive to be a valid probability. Finally time evolution under the theory must be unitary. This means that as a state vector evolves in time the state's probability does not leak away\cite{MustaHbeHermitian}\cite{MakingSense}.
 
 \subsection{The \texorpdfstring{$\mathcal{PT}$}\: operator}
 The \PT\:operator is the anti-linear operator composed of the linear parity operator (\PP), which performs spatial reflection, and the anti-linear time-reversal operator (\TT). These operators act on position and momentum operators in the following form
@@ -134,22 +134,24 @@ The \PT\:operator is the anti-linear operator composed of the linear parity oper
 \mathcal{T}:& \quad\hat{x} \rightarrow \hat{x},\quad\quad \hat{p} \rightarrow -\hat{p},\quad \mathrm{i} \rightarrow -\mathrm{i}.
 \end{split}
 \end{equation}
-Some Hamiltonians may not be symmetric under \PP\:or \TT\:separately, but Hamiltonians that remain invariant under the influence of the \PT\:operator are labelled as \PT-symmetric. A Hamiltonian $\hat{H}$ will possess unbroken \PT\:symmetry if it's eigenstates are simultaneously eigenstates of the \PT\: operator, or in other words, if $\hat{H}$ and the \PT\:operator commute. Otherwise we say that the Hamiltonian's \PT-symmetry is broken\cite{MakingSense}\cite{ComplexExtension}\cite{MustaHbeHermitian}. If the symmetry is unbroken, then the eigenspectrum of $\hat{H}$ is fully real and bounded below. The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been proved rigorously in various works, such as Dorey et al\cite{Dorey_2001}, Bender and Boettcher\cite{Bender1998}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PT-symmetricQM}, Mostafazadeh\cite{Mostafazadeh}\cite{Mostafazadeh2} amongst several others. 
+Some Hamiltonians may not be symmetric under \PP\:or \TT\:separately, but Hamiltonians that remain invariant under the influence of the \PT\:operator are labelled as \PT-symmetric. A Hamiltonian $\hat{H}$ will possess unbroken \PT\:symmetry if it's eigenstates are simultaneously eigenstates of the \PT\: operator, or in other words, if $\hat{H}$ and the \PT\:operator commute. If the \PT\:operator and $\hat{H}$ do not commute we say that the Hamiltonian's \PT-symmetry is broken\cite{MakingSense}\cite{ComplexExtension}\cite{MustaHbeHermitian}. If the symmetry is unbroken, then the eigenspectrum of $\hat{H}$ is fully real and bounded below --This is also known as exact \PT-symmetry--. The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been proved rigorously in various works, such as Dorey et al\cite{Dorey_2001}, Bender and Boettcher\cite{Bender1998}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PT-symmetricQM}, Mostafazadeh\cite{Mostafazadeh}\cite{Mostafazadeh2} amongst several others. 
 
 \subsection{The \texorpdfstring{$\mathcal{CPT}$}\:\:inner product}\label{CPT}
-To be able to describe precisely the nature of \PT-symmetric quantum mechanics, we must delve briefly into the inner-product under which our theory satisfies the axioms of conventional quantum mechanics. It is important to note that \PT-symmetric quantum mechanics is a kind of `bootstrap' theory\cite{MakingSense}, since infinitely many inner-products exist for a given vector space, we can construct an inner product whose associated norm is positive definite by design. This inner-product is in general dependent on the characteristics of the Hamiltonian in question and it guarantees that the underlying dynamics of any \PT-symmetric Hamiltonian satisfies unitarity\cite{MustaHbeHermitian}.
-Firstly, it is necessary to solve for the eigenstates of the Hamiltonian before knowing the Hilbert space and the associated inner product.
-To guarantee a positive norm for our theory, we will construct a new linear operator \CC\:that commutes with both $\hat{H}$ and \PT, we use the symbol \CC\: to represent this symmetry because it's properties are similar to those of the charge conjugation operator in particle physics\cite{MakingSense}.
+To be able to describe precisely the nature of \PT-symmetric quantum mechanics, we must delve briefly into the inner-product under which our theory satisfies the postulates of conventional quantum mechanics. It is important to note that \PT-symmetric quantum mechanics is a kind of `bootstrap' theory\cite{MakingSense}, since infinitely many inner-products exist for a given vector space, we can construct an inner product whose associated norm is positive definite by design. This inner-product is in general dependent on the characteristics of the Hamiltonian in question and it guarantees that the underlying dynamics of any \PT-symmetric Hamiltonian satisfies unitarity\cite{MustaHbeHermitian}.
+Firstly, it is necessary to solve for the eigenstates of the Hamiltonian before knowing the Hilbert space and consequentially the associated inner product.
+To guarantee a positive norm for our theory, we will construct a new linear operator \CC\:that commutes with both $\hat{H}$ and \PT. We use the symbol \CC\: to represent this symmetry because it's properties are similar to those of the charge conjugation operator in particle physics\cite{MakingSense}.
 
 \subsubsection{The $\mathcal{C}$ operator}\label{CC}
-When the \PT-symmetry of $\hat{H}$ is unbroken, then $\hat{H}$ and \PT\:commute. This statement is equivalent to saying that the eigenfunctions $\phi_n(x)$ of $\hat{H}$ are simultaneously eigenstates of \PT\cite{Bender_2004}.
+When the \PT-symmetry of $\hat{H}$ is exact, then $\hat{H}$ and \PT\:commute. This statement is equivalent to saying that the eigenfunctions $\phi_n(x)$ of $\hat{H}$ are simultaneously eigenstates of \PT\cite{Bender_2004}.
 \begin{equation}\label{eq:3}
 \mathcal{PT}\phi_n(x) = \lambda_n \phi_n(x),
 \end{equation}
-Where $\lambda_n$ is a pure phase. Without loss of generality, for each $n$the phase can be absorbed into $\phi_n(x)$ by rescaling, this makes the eigenvalue of the \PT operator unity\cite{Bender_2004}: 
+Where $\lambda_n$ is a pure phase. Without loss of generality, for each $n$\:the phase can be absorbed into $\phi_n(x)$ and this makes the eigenvalue of the \PT operator unity\cite{Bender_2004}: 
 \begin{equation}\label{eq:4}
 \mathcal{PT}\phi_n(x) = \phi_{n}^{*}(-x) = \phi_n(x).
 \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%EDITS UP TO HERE DONE
+
 There is strong numerical evidence of the completeness of the eigenfunctions $\phi_n(x)$\cite{ComplexExtension}\cite{Bender_2004}\cite{Brody_2013}. In the coordinate basis, the completeness statement reads:
 \begin{equation}\label{eq:5}
 \sum_{n}(-1)^{n}\phi_n(x)\phi_n(y) = \delta(x-y),\quad x, y \in \mathbb{R}
@@ -195,27 +197,13 @@ $\hat{U}$ is unitary because the Hamiltonian $\hat{H}$ is Hermitian, that means 
 In Quantum mechanics, the norm of a state is interpreted as a probability, and this probability must remain constant in time. Probability growth or decay in time, means that the theory violates unitarity. As explained in section \ref{PT}, when the \PT-symmetry of $\hat{H}$ is unbroken we still have positive norm states. Furthermore, time evolution under the unbroken \PT-symmetric framework is indeed unitary\cite{Jones-Smith}\cite{ComplexExtension}\cite{Mostafazadeh2}.
 
 \chapter{Consequences and applications}\label{Consq}
-% Do I clearly present my theme(s) ?
-    % bigpicture
-
-% What aspects have not been investigated? 
-
-% What are the most recent findings? 
-
-% What gaps in research have I found? 
-
-% How do I my readings and observations to accomplish that? 
-
-
 
 \chapter{Conclusion}\label{Conclusion}
 
-
-
 \chapter{Appendix}\label{appendix}
-\section{One-to-one equivalence between PT-symmetry and Hermitian Quantum theories}
+\section*{One-to-one equivalence:\\ PT-symmetric and Hermitian quantum theories}
 
-In the case of Exact \PT-symmetric Quantum mechanics
+Exact \PT-symmetric quantum mechanics is understood to be 
 
 
 % \PT\:symmetry is a dynamic property of a Hamiltonian $(\hat{H})$, in the sense that it is strongly dependent on the boundary conditions implemented on the eigenfunctions of $\hat{H}$.

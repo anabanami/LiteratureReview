@@ -1,0 +1,27 @@
+
+Do I clearly present my theme(s) ?
+    bigpicture
+ 
+
+
+% How do I my readings and observations to accomplish that? 
+
+I want to talk about 
+
+    the C operator 
+
+    bi-orthogonality
+
+    time evolution
+
+    geometry?
+
+    dictionary
+
+    most recent findings
+
+    Aspects have not been investigated -i.e. experimental applications
+
+    what have I done
+        -formal equivalence dict
+        -application of PT Matrix formalism to HO and Htilde
