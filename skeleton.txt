@@ -10,6 +10,8 @@ I want to talk about
 
     the C operator 
 
+    equivalence between DH & NHPTs 
+
     bi-orthogonality
 
     time evolution
