@@ -111,7 +111,9 @@
 \end{abstract}
 %Quantum mechanical operators must satisfy a set of properties which deem them suitable as observable dynamical variables in nature. Observers use operators to measure some qualities of a system (such as for example a system's total energy) and come to a real valued finite answer.\\
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introduction}\label{Introduction}
+
 This work reflects on a possible extension to the canonical formalism of quantum mechanics. The main goal of this extension is to allow us to access a much larger class of interesting Hamiltonians which are non-Hermitian but nevertheless physical.This extension has the potential to be of great importance to the advancement of new and physically significant theories.\\
 In ``The principles of quantum mechanics", Paul Dirac advises us that``it is important to remember that science is concerned only with \textit{observable} things and that we can observe an object only by letting it interact with some outside influence"\cite{POQM}. This means that in order to study valid physical systems, these systems must satisfy the fundamental postulates of quantum mechanical theory. Nearly all these postulates are based in physical properties. For example, one postulate establishes that time evolution of a quantum system must be \textit{unitary} (i.e. probability conserving). Another requires that the energy spectrum of the system is bounded below so a lowest energy state can be measured. In quantum mechanics, the Hamiltonian operator $(\hat{H})$ encapsulates the total energy of a system. As explained already, a system's energy spectrum is required to be bounded and real in order to be measurable. According to the fundamental postulates of the standard theory, if the operator $\hat{H}$ satisfies the mathematical property known as Hermiticity --these operators are also known as self-adjoint in mathematics--, then $\hat{H}$ will be an adequate physical observable. Interestingly, the Hermiticity postulate stands out from others in the conventional theory of quantum mechanics because it is mathematical rather than physical in its character\cite{MakingSense}.
 An operator $\hat{O}$ that is Hermitian has the property that its effect on the vectors of the Hilbert space in which $\hat{O}$ is defined is independent of the order in which $\hat{O}$ acts on said vectors\cite{Jones-Smith}
@@ -120,12 +122,13 @@ An operator $\hat{O}$ that is Hermitian has the property that its effect on the 
 \end{equation}
 Despite of the correctness of Hermiticity, some believe that perhaps we have ended up with an overly restrictive quantum theory.  
 The aim of this review is to summarize the present developments of a more physical alternative to Hermiticity. This alternative postulate is referred to as space–time reflection symmetry (\PT\:symmetry)\cite{MustaHbeHermitian}. 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\texorpdfstring{$\mathcal{PT}$}\:-symmetry}\label{PT}
 In the late nineties, Carl Bender et al presented a \PT-symmetric theory of quantum mechanics. Their aim was to explain a conjecture on the reality and positiveness of the spectrum of a non-Hermitian Hamiltonian proposed by Bessis\cite{Bender1998}. \PT-symmetric theory can be viewed as an analytical continuation of the conventional theory from real into the complex phase space\cite{PT-symmetricQM}.
 
 An important question that must be answered, is whether a \PT-symmetric Hamiltonian defines a valid physical theory of quantum mechanics. By a physical theory we mean that the following conditions must be satisfied; The energy spectra of a system described by $\hat{H}$ must be real and bounded below. Another condition is related to the probabilistic interpretation of the norm of a state, a norm must be always positive to be a valid probability. Finally time evolution under the theory must be unitary. This means that as a state vector evolves in time the state's probability does not leak away\cite{MustaHbeHermitian}\cite{MakingSense}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The \texorpdfstring{$\mathcal{PT}$}\: operator}
 The \PT\:operator is the anti-linear operator composed of the linear parity operator (\PP), which performs spatial reflection, and the anti-linear time-reversal operator (\TT). These operators act on position and momentum operators in the following form
 \begin{equation}\label{eq:2}
@@ -136,11 +139,13 @@ The \PT\:operator is the anti-linear operator composed of the linear parity oper
 \end{equation}
 Some Hamiltonians may not be symmetric under \PP\:or \TT\:separately, but Hamiltonians that remain invariant under the influence of the \PT\:operator are labelled as \PT-symmetric. A Hamiltonian $\hat{H}$ will possess unbroken \PT\:symmetry if it's eigenstates are simultaneously eigenstates of the \PT\: operator, or in other words, if $\hat{H}$ and the \PT\:operator commute. If the \PT\:operator and $\hat{H}$ do not commute we say that the Hamiltonian's \PT-symmetry is broken\cite{MakingSense}\cite{ComplexExtension}\cite{MustaHbeHermitian}. If the symmetry is unbroken, then the eigenspectrum of $\hat{H}$ is fully real and bounded below --This is also known as exact \PT-symmetry--. The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been proved rigorously in various works, such as Dorey et al\cite{Dorey_2001}, Bender and Boettcher\cite{Bender1998}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PT-symmetricQM}, Mostafazadeh\cite{Mostafazadeh}\cite{Mostafazadeh2} amongst several others. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The \texorpdfstring{$\mathcal{CPT}$}\:\:inner product}\label{CPT}
 To be able to describe precisely the nature of \PT-symmetric quantum mechanics, we must delve briefly into the inner-product under which our theory satisfies the postulates of conventional quantum mechanics. It is important to note that \PT-symmetric quantum mechanics is a kind of `bootstrap' theory\cite{MakingSense}, since infinitely many inner-products exist for a given vector space, we can construct an inner product whose associated norm is positive definite by design. This inner-product is in general dependent on the characteristics of the Hamiltonian in question and it guarantees that the underlying dynamics of any \PT-symmetric Hamiltonian satisfies unitarity\cite{MustaHbeHermitian}.
 Firstly, it is necessary to solve for the eigenstates of the Hamiltonian before knowing the Hilbert space and consequentially the associated inner product.
 To guarantee a positive norm for our theory, we will construct a new linear operator \CC\:that commutes with both $\hat{H}$ and \PT. We use the symbol \CC\: to represent this symmetry because it's properties are similar to those of the charge conjugation operator in particle physics\cite{MakingSense}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{The $\mathcal{C}$ operator}\label{CC}
 When the \PT-symmetry of $\hat{H}$ is exact, then $\hat{H}$ and \PT\:commute. This statement is equivalent to saying that the eigenfunctions $\phi_n(x)$ of $\hat{H}$ are simultaneously eigenstates of \PT\cite{Bender_2004}.
 \begin{equation}\label{eq:3}
@@ -169,7 +174,7 @@ exists a symmetry of the Hamiltonian that describes the negative and positive no
 \mathcal{C} = \sum_n \phi_n(x)\phi_n(y)
 \end{equation}
 From this definition, and the relation $(\phi_m(y), \phi_n(y)) = \int dy\:\phi_m(y)\phi_n(y)$ we can verify that the eigenvalues of \CC\: are $\pm 1$
-\begin{align}\label{eq:7}
+\begin{align}\label{eq:8}
 \mathcal{C} \phi_n(x) & = \int dy\:\mathcal{C}\:\phi_n(y)\nonumber \\
 & = \sum_{m}\phi_m(x)\int dy\:\phi_m(y) \phi_n(y)\nonumber \\
 & = (-1)^n \phi_n(x)
@@ -177,65 +182,21 @@ From this definition, and the relation $(\phi_m(y), \phi_n(y)) = \int dy\:\phi_m
 The \PT\:norms signatures can therefore be interpreted as the ``charge'' of the states, while \CC\: is the operator used to measure this charge\cite{Bender_2004}.
 
 The \CC\: operator commutes with the \PT\: operator, but it does not commute with the parity operator \PP. Notice that \CC\:and \PP\: operators are square roots of $\delta(x-y)$ the unity operator\cite{ComplexExtension}
-\begin{equation}\label{eq:8}
+\begin{equation}\label{eq:9}
 \mathcal{P}^2 = \mathcal{C}^2 = \mathds{1}, 
 \end{equation}
 where $\mathcal{P} \neq \mathcal{C}$, since \PP\: is real and \CC\: is complex valued\cite{MustaHbeHermitian}\cite{Bender_2004}.
 
 Using the newly constructed \CC\: operator, we can redesign the \PT\: inner product to suit the conventional probabilistic interpretation of the vector norms in quantum mechanics
-
-\begin{equation}\label{eq:9}
+\begin{equation}\label{eq:10}
 \left( f, g \right ) = \int dx \left [ \mathcal{CPT} f(x) \right ] g(x).
 \end{equation}
-
-
-\chapter{Equivalent Hamiltonians with distinct symmetries}\label{Equiv}
-
-In parallel to the work of Bender is the research of Mostafazadeh who introduced the notion of pseudo-Hermiticity in \cite{Mostafazadeh}. A Hamiltonian is said to be pseudo-Hermitian with respect to a positive-definite, Hermitian operator $\eta$ if it satisfies
-\begin{equation}\label{eq:10}
-\tilde{H}^{\dagger}  = \eta^{-1}\tilde{H}\eta.
-\end{equation}
-In the case of Hamiltonians with \PT-symmetry, the role of $\eta$ is played by \PP\CC. A convenient way to write the \CC\:operator was proposed in \cite{Bender_2006} 
-\begin{equation}\label{eq:11}
-\mathcal{C} = e^{Q}\mathcal{P} = \eta^{-1}\mathcal{P} ,
-\end{equation}
-where $Q$ is an antisymmetric Hermitian operator. Mostafazadeh \cite{Mostafazadeh2} has shown that the square root of the positive-definite Hermitian operator $\eta = e^{-Q}$ can be used to transform any non-Hermitian Hamiltonian with unbroken \PT-symmetry into a spectrally equivalent Hermitian Hamiltonian by means of a unitary ``similarity transformation"\cite{PTvsDH}\cite{Jones_2005}. The transformation is as follows, the invertible operator $\rho = \sqrt{\eta}$ acts on the non-Hermitian \PT-symmetric Hamiltonian $\tilde{H}$ and returns an equivalent Hermitian Hamiltonian $\hat{H}$
-\begin{equation}\label{eq:12}
-\hat{H} = \rho^{-1}\tilde{H}\rho = e^{-Q/2}\tilde{H}e^{Q/2}.
-\end{equation}
-To verify that the similar Hamiltonian $\hat{H}$ is Hermitian we take the hermitian conjugate of $\hat{H}$
-\begin{align}\label{eq:13}
-\hat{H}^{\dagger} &= (e^{-Q/2}\tilde{H}e^{Q/2})^{\dagger}\nonumber,\\
-& = e^{Q/2}\tilde{H}^{\dagger}e^{-Q/2},
-\end{align}
-If we ``swap" Hermiticity: $\tilde{H}^{\dagger}$ in \ref{eq:13} for \PT-symmetry, and we use equation \ref{eq:11}
-\begin{align}\label{eq:14}
-\hat{H}^{\dagger} &= e^{Q/2}\mathcal{P}\tilde{H}\mathcal{P}^{-1}e^{-Q/2}\nonumber,\\
-&= e^{-Q/2}\mathcal{C}\tilde{H}\mathcal{C}^{-1}e^{Q/2},
-\end{align}
-Finally we recall that \CC\:and $\tilde{H}$ commute
-\begin{equation}\label{eq:15}
-\hat{H}^{\dagger} = e^{-Q/2}\tilde{H}e^{Q/2} = \hat{H}.
-\end{equation}
-Mostafazadeh \cite{Mostafazadeh}, conjectures that because \CPT-symmetry satisfies the postulates of quantum mechanics --whilst only ``swapping" the Hermiticity of a Hamiltonian by \CPT-symmetry-- then this must mean that non Hermitian \CPT-symmetric theories are equivalent to certain non local Hermitian field theories. It is natural to notice that this equivalence feature between both theories could provide an advantage to simplify quantum mechanical calculations as is explored in references \cite{Mostafazadeh},\cite{EquivalentHH},\cite{Pseudo-HermiticityIII},\cite{Jones_2005},\cite{taleof2potentials}.
-
-\section{Interlude: A toy example}\label{Inter}
-I am interested in the applications of \PT-symmetry. My project focuses in dynamics under non-Hermitian but \PT-symmetric Hamiltonians. In this section I illustrate some interesting differences between Hermitian and non-Hermitian systems.
-\subsection{Two $2\times2$ Hamiltonians}
-In \cite{Bender_2007} ``Faster than Hermitian Quantum mechanics" Bender et al compare a Hermitian Hamiltonian $\hat{H}$ and a \PT-symmetric non-Hermitian Hamiltonian $\tilde{H}$
-\begin{align}\label{eq:13}
-\hat{H} = \begin{pmatrix}
-s & re^{-i\theta}\\
-re^{i\theta} & u \\
-\end{pmatrix}, \quad\tilde{H} = \begin{pmatrix}
-re^{i\theta} & s  \\
-s & re^{-i\theta} \\
-\end{pmatrix}
-\end{align} 
-where the parameters $r, s, u$, and $\theta$ are real.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bi-orthogonal systems}\label{BiS}
-Suppose that a diagonalizable non-Hermitian Hamiltonian $\tilde{H}$ has a discrete spectrum and it commutes with the \PT\:operator.  Then $\tilde{H}$ has unbroken \PT-symmetry. There exists a Hilbert space $\mathcal{H}$ spanned by the eigenvectors of $\tilde{H}$ but because $\tilde{H}$ is non-Hermitian --with respect to a complete positive-definite inner product of $\mathcal{H}$-- the time evolution generated by $\tilde{H}$ will not be unitary\cite{Mostafazadeh}.
+
+WHY IS THIS COOL?\\
+
+Suppose that a diagonalizable non-Hermitian Hamiltonian $\tilde{H}$ has a discrete spectrum and it commutes with the \PT\:operator.  This means that  $\tilde{H}$ has unbroken \PT-symmetry. There exists a Hilbert space $\mathcal{H}$ spanned by the eigenvectors of $\tilde{H}$ but because $\tilde{H}$ is non-Hermitian --with respect to a complete positive-definite inner product of $\mathcal{H}$-- the time evolution generated by $\tilde{H}$ will not be unitary\cite{Mostafazadeh}.
 As explained in section \ref{CC}. For the assumed $\tilde{H}$ above we can construct a different complete positive-definite inner product by constructing and using the antisymmetric \CC\:operator that corresponds to $\tilde{H}$.
 The assumed diagonalizability condition of $\tilde{H}$ may be viewed as a physical requirement without which an energy eigenbasis would not exist. To our knowledge all known non-Hermitian Hamiltonians that are used in physical applications are diagonalizable and therefore admit a complete bi-orthonormal set of eigenvectors. This set of bi-orthonormal eigenvectors is $\{(\ket{\psi_{n}, a}, \ket{\phi_{n}, a})\}$ and will satisfy the
 following defining relations\cite{Pseudo-HermiticityIII}
@@ -247,35 +208,200 @@ following defining relations\cite{Pseudo-HermiticityIII}
 \sum^{}_{n}\sum_{a=1}^{d_n}\ket{\psi_{n}, a}\bra{\phi_{n}, a} = \hat{\mathbb{I}}&\\
 \tilde{H} = \sum^{}_{n}\sum_{a=1}^{d_n}E_{n}\ket{\psi_{n}, a}\bra{\phi_{n}, a},\quad\tilde{H^{\dagger}} &= \sum^{}_{n}\sum_{a=1}^{d_n}E_{n}^{*}\ket{\phi_{n}, a}\bra{\psi_{n}, a}
 \end{align}
-where $n$ and $a$ are the spectral degeneracy levels, $d_n$ is the degree of degeneracy of $E_n$ and $\hat{\mathbb{I}}$ is the identity operator\cite{Pseudo-HermiticityIII}.
+where $n$ and $a$ are the spectral degeneracy levels, $d_n$ is the degree of degeneracy of $E_n$ and $\hat{\mathbb{I}}$ is the identity operator\cite{Pseudo-HermiticityIII}.\\\\
+PT NORMALISATION\\
 
-\chapter{Time evolution}\label{TEv}
-Time-evolution in conventional quantum mechanics can be described using the unitary operator $\hat{U} = e^{-i\hat{H}t/\hbar}$.
-$\hat{U}$ is unitary because the Hamiltonian $\hat{H}$ is Hermitian, that means that as the state $\vec{\psi}$ evolves in time, its norm remains constant in time. Hence time evolution of a state $\vec{\psi}$ from time $0 \rightarrow t$ is written as
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Equivalent Hamiltonians with distinct symmetries}\label{Equiv}
+
+In parallel to the work of Bender is the research of Mostafazadeh who introduced the notion of pseudo-Hermiticity in \cite{Mostafazadeh}. A Hamiltonian is said to be pseudo-Hermitian with respect to a positive-definite, Hermitian operator $\eta$ if it satisfies
+\begin{equation}\label{eq:11}
+\tilde{H}^{\dagger}  = \eta^{-1}\tilde{H}\eta.
+\end{equation}
+In the case of Hamiltonians with \PT-symmetry, the role of $\eta$ is played by the combines action of \PP\:and \CC. A convenient way to write the \CC\:operator was proposed in \cite{Bender_2006} 
+\begin{equation}\label{eq:12}
+\mathcal{C} = e^{Q}\mathcal{P} = \eta^{-1}\mathcal{P} ,
+\end{equation}
+here $Q$ is an antisymmetric Hermitian operator. Mostafazadeh \cite{Mostafazadeh2} has shown that the square root of the positive-definite Hermitian operator $\eta = e^{-Q}$ can be used to transform any non-Hermitian Hamiltonian with unbroken \PT-symmetry into a spectrally equivalent Hermitian Hamiltonian by means of a unitary ``similarity transformation"\cite{PTvsDH}\cite{Jones_2005}. The transformation is as follows, the invertible operator $\rho = \sqrt{\eta}$ acts on the non-Hermitian \PT-symmetric Hamiltonian $\tilde{H}$ and returns an equivalent Hermitian Hamiltonian $\hat{H}$
+\begin{equation}\label{eq:13}
+\hat{H} = \rho^{-1}\tilde{H}\rho = e^{-Q/2}\tilde{H}e^{Q/2}.
+\end{equation}
+To verify that the similar Hamiltonian $\hat{H}$ is Hermitian we take the Hermitian conjugate of $\hat{H}$
+\begin{align}\label{eq:14}
+\hat{H}^{\dagger} &= (e^{-Q/2}\tilde{H}e^{Q/2})^{\dagger}\nonumber,\\
+& = e^{Q/2}\tilde{H}^{\dagger}e^{-Q/2},
+\end{align}
+If we ``swap" Hermiticity: $\tilde{H}^{\dagger}$ in \ref{eq:14} for \PT-symmetry, and we use equation \ref{eq:12}
+\begin{align}\label{eq:15}
+\hat{H}^{\dagger} &= e^{Q/2}\mathcal{P}\tilde{H}\mathcal{P}^{-1}e^{-Q/2}\nonumber,\\
+&= e^{-Q/2}\mathcal{C}\tilde{H}\mathcal{C}^{-1}e^{Q/2},
+\end{align}
+Finally we recall that \CC\:and $\tilde{H}$ commute
+\begin{equation}\label{eq:16}
+\hat{H}^{\dagger} = e^{-Q/2}\tilde{H}e^{Q/2} = \hat{H}.
+\end{equation}
+Mostafazadeh \cite{Mostafazadeh}, conjectures that because \CPT-symmetry satisfies the postulates of quantum mechanics --whilst only ``swapping" the Hermiticity of a Hamiltonian by \CPT-symmetry-- then this must mean that non Hermitian \CPT-symmetric theories are equivalent to certain non local Hermitian field theories. It is natural to notice that this equivalence feature between both theories could provide an advantage to simplify quantum mechanical calculations, this is explored in references \cite{Mostafazadeh},\cite{EquivalentHH},\cite{Pseudo-HermiticityIII},\cite{Jones_2005},\cite{taleof2potentials}.\\\\
+MORE HERE??????
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Comparing time evolution}\label{Interlude}
+
+In this section I illustrate some features of non-Hermitian \PT-symmetric Hamiltonians. Time-evolution in conventional quantum mechanics is implemented using the unitary operator $\hat{U} = e^{-i\hat{H}t/\hbar}$.
+$\hat{U}$ is unitary because the Hamiltonian $\hat{H}$ is Hermitian. This means that as the state $\vec{\psi}$ evolves in time, the norm of $\vec{\psi}$ remains constant in time. Time evolution of a state $\vec{\psi}$ from time $0 \rightarrow t$ is written as
 \begin{equation}
 \vec{\psi}(t) = \hat{U} \vec{\psi}(0).
 \end{equation}
-In Quantum mechanics, the norm of a state is interpreted as a probability, and this probability must remain constant in time. Probability growth or decay in time, means that the theory violates unitarity. As explained in section \ref{PT}, when the \PT-symmetry of $\hat{H}$ is unbroken we still have positive norm states. Furthermore, time evolution under the unbroken \PT-symmetric framework is indeed unitary\cite{Jones-Smith}\cite{ComplexExtension}\cite{Mostafazadeh2}.
+In quantum mechanics, the norm of a state is interpreted as a probability, and this probability must remain constant in time. Probability growth or decay in time, means that the theory violates unitarity. As explained in section \ref{PT}, when the \PT-symmetry of $\hat{H}$ is unbroken we still have positive norm states. This means that time evolution under the unbroken \PT-symmetric framework is also unitary\cite{Jones-Smith}\cite{ComplexExtension}\cite{Mostafazadeh2}. Since both Hermitian and \PT-symmetric theory satisfy unitarity, it makes sense to compare their dynamics. In ``Faster than Hermitian Quantum mechanics" (\cite{Bender_2007} ) Bender et al compare the time evolution under two distinct Hamiltonians. 
 
+\subsection{Two $2\times2$ Hamiltonians}
+In \cite{Bender_2007} two two-level systems are compared. One is described by Hermitian Hamiltonian $\hat{H}$ and the other by a (unbroken) \PT-symmetric non-Hermitian Hamiltonian $\tilde{H}$.  The main purpose of this comparison is to identify which kind of Hamiltonian promotes the ``speediest" time evolution in a Hilbert space $\mathcal{H}$ spanned by $\ket{\psi_{i}}$ and $\ket{\psi_{f}}$, or in other words, we aim to find whether the shortest lapsed time for the time evolution occurs when we use either a $\hat{H}$ or $\tilde{H}$. The premise of Hermitian dynamics is that evolution of states requires a non zero amount of time, provided that the difference between the largest and smallest eigenvalues of the hermitian Hamiltonian $\hat{H}$ remains fixed\cite{Bender_2007}
+\begin{equation}\label{eq:17}
+\omega = E_{\mathrm{max}} - E_{\mathrm{min}} > 0
+\end{equation}
+Since the \PT-symmetry of the non-Hermitian Hamiltonian $\tilde{H}$ is unbroken, its eigenvalues are also real valued, therefore we can also  impose \ref{eq:17} when dealing with the dynamics under $\tilde{H}$.
+We choose the basis so that the initial and final states are
+\begin{align}\label{eq:18}
+\ket{\psi_{i}} = \begin{pmatrix}
+1\\
+0\\
+\end{pmatrix}, \quad\ket{\psi_f} = \begin{pmatrix}
+a\\
+b\\
+\end{pmatrix}
+\end{align}
+where $a$ and $b$ are chosen such that $|a|^2 + |b|^2 = 1$\cite{Bender_2007}.
+The Hamiltonians we use in this exercise are written most generally in matrix form as
+\begin{align}\label{eq:19}
+\hat{H} = \begin{pmatrix}
+s & re^{-i\theta}\\
+re^{i\theta} & u \\
+\end{pmatrix}\quad\mathrm{and}\quad\tilde{H} = \begin{pmatrix}
+re^{i\theta} & s  \\
+s & re^{-i\theta} \\
+\end{pmatrix}
+\end{align} 
+where the parameters $r, s, u$, and $\theta$ are real.
+An interesting geometric picture becomes evident when the eigenvalue problem for both Hamiltonians is solved separately. When we square equation \ref{eq:17}, it is clear that $\omega^2$ emphasizes the key
+difference between Hermitian and \PT -symmetric
+Hamiltonians\cite{Bender_2007}. The corresponding equation for $\hat{H}$: $\hat{\omega}^2$ is a sum of squares, while in the case of $\tilde{H}$: $\tilde{\omega}^2$ is a difference of squares
+\begin{equation}\label{eq:20}
+\hat{\omega}^{2} = (s - u)^2 + 4r^2 \quad\mathrm{and}\quad \tilde{\omega}^2 = 4s^2 - 4r^2 \sin^2\theta,
+\end{equation}
+The positivity of $\tilde{\omega}^2$ is ensured by the condition of unbroken \PT-symmetry\cite{Bender_2007} that we imposed on $\tilde{H}$.
+These equations demonstrate that Hermitian Hamiltonians exhibit elliptic behaviour, which leads to a non zero lower bound for the optimal time\cite{Bender_2007} as we will see soon. On the other hand, \PT-symmetric Hamiltonian states live in a hyperbolic Hilbert space which can be used to make the optimal time arbitrarily small.
+
+Both $\hat{H}$ and $\tilde{H}$ can also be expressed in terms of Pauli matrices
+\begin{equation}\label{eq:21}
+\hat{H} = \frac{1}{2}(s+u)\mathds{1} + \frac{\omega}{2}\vec{\sigma} \cdot\vec{n_1}\quad\mathrm{and}\quad \tilde{H} = (r\cos\theta)\mathds{1} + \frac{\omega}{2}\vec{\sigma} \cdot\vec{n_2},
+\end{equation} 
+here each corresponding unit vector is $\vec{n_1} = \frac{2}{\omega}(r\cos\theta, r\sin\theta, \frac{(s-u)}{2})$ and $\vec{n_2} = \frac{2}{\omega}(s, 0 , ir\sin\theta)$ and $\vec{\sigma}$ is the vector of Pauli matrices.
+
+Using the matrix identity $e^{-i\phi\vec{\sigma} \cdot\vec{n}} = (\cos\phi)\mathds{1} + i\sin\phi\vec{\sigma} \cdot\vec{n}$, we can write the Hermitian time evolution expression as
+\begin{equation}\label{eq:22}
+\begin{pmatrix}
+a \\
+b \\                
+\end{pmatrix} = e^{\frac{-i(s+u)t}{2\hbar}}
+\begin{pmatrix}
+\cos(\frac{\omega t}{2\hbar}) - i \frac{s - u}{\omega} \sin(\frac{\omega t}{2\hbar})\\
+- i \frac{2r}{\omega} e^{i \theta} \sin(\frac{\omega t}{2\hbar}) \\
+\end{pmatrix}.
+\end{equation}
+To find the time required to transform to the final state $\ket{\psi_f}$, we take the second component in \ref{eq:22} and obtain $t = \frac{2\hbar}{\omega}\arcsin(\frac{\omega|b|}{2 r})$. The shortest evolution time for all $r>0$ that satisfies $\hat{\omega}^2$ in \ref{eq:20} is
+\begin{equation}\label{eq:23}
+\tau = \frac{2\hbar}{\omega}\arcsin|b|,
+\end{equation}
+$\tau$ is known as the \emph{passage time}\cite{passage_t}.
+
+To perform the same optimization for the \PT-symmetric non-Hermitian Hamiltonian in \ref{eq:21} we let \TT\:be the
+operation of complex conjugation and define the \PP\:operator as the \PT-symmetric $2\times2$ matrix
+\begin{equation}\label{eq:24}
+\mathcal{P} =\begin{pmatrix}
+0 & 1 \\
+1 & 0\\                
+\end{pmatrix}.
+\end{equation}
+Since we are only concerned with the region of unbroken \PT-symmetry the eigenvalues of $\tilde{H}$: $E_{\pm} = r\cos\theta \pm \sqrt{s^2 - r^2\sin^2\theta}$ are fully real. The corresponding \PT\: normalised eigenstates of $\tilde{H}$ are
+\begin{equation}\label{eq:25}
+\ket{E_{+}} = \frac{1}{\sqrt{2\cos\alpha}}\begin{pmatrix}
+e^{i \alpha/2}\\
+e^{-i \alpha/2}\\                
+\end{pmatrix}\quad\mathrm{and}\quad \ket{E_{-}} = \frac{1}{\sqrt{2\cos\alpha}}
+\begin{pmatrix}
+ie^{-i \alpha/2}\\
+-ie^{i \alpha/2}\\                
+\end{pmatrix}
+\end{equation}
+here the change of variables is $\sin\alpha = \frac{r}{s}\sin\theta$.
+
+The hyperbolic nature of the $\tilde{\omega}^2$ in \ref{eq:21}  allows $t$ to approach zero because the matrix elements of the \PT -symmetric Hamiltonian can be made large without violating the energy constraint in \ref{eq:17}\cite{Bender_2007}. The \PT-symmetric analogue of the evolution in \ref{eq:22} is
+\begin{equation}\label{eq:26}
+\begin{pmatrix}
+a \\
+b \\                
+\end{pmatrix} = \frac{e^{\frac{-itr \cos\theta}{\hbar}}}{\cos{\alpha}}
+\begin{pmatrix}
+\cos(\frac{\omega t}{2 \hbar} - \alpha)\\
+- i \sin(\frac{\omega t}{2\hbar})\\
+\end{pmatrix}.
+\end{equation}
+As an example, let the final state be $\ket{\psi_f} = \begin{pmatrix}0 \\1 \\\end{pmatrix}$. Once again, finding the smallest $t$ can be done by using one of the equations in the \ref{eq:26} matrix system. Here we will use the equation
+\begin{align}\label{eq:27}
+&|a|= \frac{\cos(\frac{\omega t}{2 \hbar} -\alpha)}{\cos{\alpha}} \sin\left(\frac{\omega t}{2\hbar}\right),\nonumber\\
+&\Rightarrow t = \frac{\hbar}{\omega}(2 \alpha + \pi).
+\end{align}
+the minimal passage time in the \PT-symmetric framework must also satisfy the fixed energy constraint in \ref{eq:17}. From the relationship between $\theta$ and $\alpha$, we can rewrite $\tilde{\omega}^2$ in equation \ref{eq:20} as $\tilde{\omega}^2 = 4s^2\cos^2(\alpha)$. This demonstrates that the time evolutions in \ref{eq:23} and \ref{eq:27} differ mostly in that the shortest passage time in the Hermitian framework is $\tau = \frac{\pi\hbar}{\omega}$, while for the \PT-symmetric case in the limit $\alpha \rightarrow -\frac{\pi}{2}$ its possible to make the passage time arbitrarily small.
+This result does not violate the uncertainty principle because of the intrinsic difference in the Hilbert space geometry and its defined metric. In \PT-symmetric quantum theory, the inner-product depends directly on the
+Hamiltonian. As a consequence, it is possible to set the $\alpha$ parameter to a value such that we can have instantaneous evolution from $\ket{\psi_i}$ to $\ket{\psi_f}$.
+% Since we are dealing with two-level systems, it is useful to use the Bloch sphere to visualise the geometry of this system. 
+% \begin{Figure}
+% \centering
+% \includegraphics[width=\linewidth]{Bloch_spheres.png}
+% \captionof{figure}{}
+% \label{fig:bloch}
+% \end{Figure}
+
+
+
+
+    % \vspace{0.5cm}
+    % Then $t \to 0$ when $\alpha \to -\frac{\pi}{2}$.\\
+    % but we also require $s, r >> 1$.\\
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \chapter{Consequences and applications}\label{Consq}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusion}\label{Conclusion}
 
-\chapter{Appendix}\label{appendix}
-\section*{One-to-one equivalence:\\ PT-symmetric and Hermitian quantum theories}
+% Exact \PT-symmetry of Hamiltonians is understood to be equivalently useful at describing quantum mechanical systems as the mathematical postulate of Dirac Hermiticity
 
-Exact \PT-symmetric quantum mechanics is understood to be
 
 
 % \PT\:symmetry is a dynamic property of a Hamiltonian $(\hat{H})$, in the sense that it is strongly dependent on the boundary conditions implemented on the eigenfunctions of $\hat{H}$.
 
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Appendix}\label{appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{One-to-one equivalence:\\ PT-symmetric and Hermitian quantum theories}
+
+
+
+\section*{parametric family of PTsNHH}
+
 % Let us consider the family of parametric Hamiltonians possessing \PT\:symmetry
-% \begin{equation}\label{eq:4}
+% \begin{equation}\label{eq:}
 % \hat{H} = \hat{p}^2 + \hat{x}^{2}(i x)^{\epsilon} \quad\quad (\epsilon\:\mathrm{real}). 
 % \end{equation}
-% The Hamiltonian in \ref{eq:4} has unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT\:symmetry when $\epsilon < 0$. The energy spectrum of \ref{eq:4} has been proved to be real and bounded below in the region of unbroken \PT\:symmetry \cite{Dorey_2004}. 
+% The Hamiltonian in \ref{eq:} has unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT\:symmetry when $\epsilon < 0$. The energy spectrum of \ref{eq:} has been proved to be real and bounded below in the region of unbroken \PT\:symmetry \cite{Dorey_2004}. 
 % This particular family of Hamiltonians is useful to us as an example because we can demonstrate how by carefully choosing the boundary conditions associated with its eigenvalue problem  
-% \begin{equation}\label{eq:5}
+% \begin{equation}\label{eq:}
 %  -\psi''_{n}(x) + x^2(ix)^{\epsilon}\psi_n(x) = E_n \psi_n(x), 
 % \end{equation}
 % where for $\epsilon\geq 0$ and for $x$ located in an infinite contour in the complex-x plane, $\psi(x) \rightarrow 0$ exponentially rapidly as $|x| \rightarrow \infty$. 
@@ -283,7 +409,7 @@ Exact \PT-symmetric quantum mechanics is understood to be
 % There is evidence that suggests that, when properly normalised, the eigenfunctions $\psi(x)$ form a complete set\cite{MustaHbeHermitian}.
 
 
-% \subsection{Stokes wedges and boundary conditions}\label{BCS}
+\section*{Stokes wedges and boundary conditions}\label{BCS}
 % The class of \PT-symmetric Hamiltonians is larger than and includes Hermitian Hamiltonians because any real symmetric Hamiltonian is automatically \PT-symmetric\cite{MustaHbeHermitian}
 
 
