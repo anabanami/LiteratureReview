@@ -1,15 +1,12 @@
 The relevant theory behind your project;
 
-The background experiments or observations (in the case of astrophysics) and results which are already published;
+The background experiments and results which are already published;
 
 The specific nature of the materials and/or techniques which are to be employed;
 
 The theory underlying these techniques at the level that will be required by you in interpreting data to be collected during your project research; and
 
 (specifically for students undertaking a theoretical project) a detailed discussion of the theoretical/mathematical background to the project together with the demonstration of an awareness of the experimental evidence supporting the theoretical models.
-
-
-
 
 
 
@@ -25,20 +22,17 @@ I want to talk about
 
 [X]    the C operator 
 
-[X]    equivalence between DH & NHPTs 
-
-[]    bi-orthogonality
+[]    bi-orthogonality < MORE HER IN MAKING SENSE
 
 []    time evolution
-
-[]    geometry?
 
 []    dictionary
 
     most recent findings
 
-    Aspects have not been investigated -i.e. experimental applications
+    Aspects have not been investigated 
 
     what have I done
         -formal equivalence dict
-        -application of PT Matrix formalism to HO and Htilde
+        -
+        - conceptualise experimental application
