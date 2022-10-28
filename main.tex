@@ -96,7 +96,7 @@ Despite of the correctness of Hermiticity, some believe that perhaps we have end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\texorpdfstring{$\mathcal{PT}$}\:-symmetry}\label{PT}
-In the late nineties, Carl Bender and colleagues presented a \PT-symmetric theory of quantum mechanics. Their aim was to explain a conjecture on the reality and positiveness of the spectrum of a non-Hermitian Hamiltonian proposed by Bessis\cite{Bender1998}, this Hamiltonian spectrum was surprising since it was widely thought that non-Hermitian Hamiltonians would not have physically valid energy spectra. In very general terms, \PT-symmetric theory can be viewed as an analytical continuation of the conventional theory from real into the complex phase space\cite{PTsymmetricQM}.
+In the late nineties, Carl Bender and colleagues presented a \PT-symmetric theory of quantum mechanics. Their aim was to explain a conjecture on the reality and positiveness of the spectrum of a non-Hermitian Hamiltonian proposed by Bessis\cite{RealSpectrainNHH}, this Hamiltonian spectrum was surprising since it was widely thought that non-Hermitian Hamiltonians would not have physically valid energy spectra. In very general terms, \PT-symmetric theory can be viewed as an analytical continuation of the conventional theory from real into the complex phase space\cite{PTsymmetricQM}.
 
 An important question that must be answered, is whether a \PT-symmetric Hamiltonian defines a valid physical theory of quantum mechanics. By a physical theory we mean that the following conditions must be satisfied; The energy spectra of a system described by $\hat{H}$ must be real and bounded below. Another condition is related to the probabilistic interpretation of the norm of a state, a norm must be always positive to be a valid probability. Finally, time evolution under the theory must be unitary. This means that as a state vector evolves in time the state's probability does not leak away\cite{MustaHbeHermitian}\cite{MakingSense}.
 
@@ -109,11 +109,26 @@ The \PT\:operator is the anti-linear operator composed of the linear parity oper
 \mathcal{T}:& \quad\hat{x} \rightarrow \hat{x},\quad\quad \hat{p} \rightarrow -\hat{p},\quad \mathrm{i} \rightarrow -\mathrm{i}.
 \end{split}
 \end{equation}
-Some Hamiltonians may not be symmetric under \PP\:or \TT\:separately, but Hamiltonians that remain invariant under the influence of the \PT\:operator are labelled as \PT-symmetric. A Hamiltonian $\hat{H}$ will possess unbroken \PT\:symmetry if it's eigenstates are simultaneously eigenstates of the \PT\: operator, or in other words, if $\hat{H}$ and the \PT\:operator commute. If the \PT\:operator and $\hat{H}$ do not commute we say that the Hamiltonian's \PT-symmetry is broken\cite{MakingSense}\cite{ComplexExtension}\cite{MustaHbeHermitian}. If the symmetry is unbroken, then the eigenspectrum of $\hat{H}$ is fully real and bounded below --This is also known as exact \PT-symmetry--. The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been proved rigorously in various works, such as Dorey et al\cite{Dorey_2001}, Bender and Boettcher\cite{Bender1998}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PTsymmetricQM}, Mostafazadeh\cite{Mostafazadeh}\cite{Mostafazadeh2} amongst others. 
+Some Hamiltonians may not be symmetric under \PP\:or \TT\:separately, but Hamiltonians that remain invariant under the influence of the \PT\:operator are labelled as \PT-symmetric. 
+A Hamiltonian $\hat{H}$ will possess unbroken \PT\:symmetry if the following conditions are satisfied
+\begin{equation}\label{eq:1.3}
+[\tilde{H}, \mathcal{PT}] = 0\quad\mathrm{and}\quad\mathcal{PT}\ket{\psi_n} = \ket{\psi_n},
+\end{equation}
+where $\ket{\psi_n}$ are the eigenstates of $\tilde{H}$. The second condition in \ref{eq:1.3} means that the eigenstates $\ket{\psi_n}$ are simultaneously eigenstates of the \PT\: operator. Unfortunately, the anti-linearity of the \PT\:operator is responsible for the possibility that only the first identity in \ref{eq:1.3} could hold, but not the second\cite{Faria1}.
+If both conditions in \ref{eq:1.3} hold then the \PT-symmetry of $\tilde{H}$ is unbroken. This means that the eigenspectrum of $\tilde{H}$ is fully real and bounded below --This is also known as exact \PT-symmetry--.
+\begin{Figure}
+\centering
+\includegraphics[width=0.7\linewidth]{eigenvalues_and_PTsymmetry.pdf}
+\captionof{figure}{Illustration of the conditions in equations \ref{eq:1.3}. \PT-symmetry and the reality of eigenvalues. This figure is strongly inspired by figure 2 in reference \cite{Faria1}}
+\label{fig:eigenvalues}
+\end{Figure}
+
+The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been shown in various works, such as Dorey et al\cite{Dorey_2001}, Bender and Boettcher\cite{Bender1998}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PTsymmetricQM}, Mostafazadeh\cite{Mostafazadeh}\cite{Mostafazadeh2} amongst others. 
+
 
 \section{A new inner product}\label{PTinnerp}
 To ensure that a the eigenstates $\{\ket{\psi_n}\}$ of a \PT-symmetric Hamiltonian $\tilde{H}$ are orthogonal, it is necessary to specify an inner product. A possible choice for the inner product associated with $\tilde{H}$ might be\cite{PTsymmetricQM}
-\begin{equation}\label{eq:1.3}
+\begin{equation}\label{eq:1.4}
 \braket{\psi_n|\psi_m} \equiv \int_{c} dx [\psi_{n}(x)]^{\mathcal{PT}}\psi_m(x) = \int_{c} dx [\psi_{n}(-x)]^{*}\psi_m(x)
 \end{equation}
 where $c$ is a complex contour that starts and ends within specific boundary conditions (see section \ref{App4}). Unfortunately this obvious choice for the \PT\:inner product is not correct because it does not guarantee a positive definite norm.
@@ -127,20 +142,20 @@ To guarantee a positive norm for our theory, we will construct a new linear oper
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The $\mathcal{C}$ operator}\label{CC}
 When the \PT-symmetry of $\hat{H}$ is unbroken, then $\hat{H}$ and \PT\:commute. This statement is equivalent to saying that the eigenfunctions $\phi_n(x)$ of $\hat{H}$ are simultaneously eigenstates of the \PT\:operator\cite{Bender_2004}
-\begin{equation}\label{eq:1.4}
+\begin{equation}\label{eq:1.5}
 \mathcal{PT}\phi_n(x) = \lambda_n \phi_n(x),
 \end{equation}
 Where $\lambda_n$ is a pure phase. Without loss of generality, for each $n$\:the phase can be absorbed into $\phi_n(x)$ and this makes the eigenvalue of the \PT operator unity\cite{Bender_2004}: 
-\begin{equation}\label{eq:1.5}
+\begin{equation}\label{eq:1.6}
 \mathcal{PT}\phi_n(x) = \phi_{n}^{*}(-x) = \phi_n(x).
 \end{equation}
 
 There is strong numerical evidence of the completeness of the eigenfunctions $\phi_n(x)$\cite{ComplexExtension}\cite{Bender_2004}\cite{Brody_2013}. In the coordinate basis, the completeness statement reads:
-\begin{equation}\label{eq:1.6}
+\begin{equation}\label{eq:1.7}
 \sum_{n}(-1)^{n}\phi_n(x)\phi_n(y) = \delta(x-y),\quad x, y \in \mathbb{R}
 \end{equation}
-the unconventional $(-1)^n$ factor in \ref{eq:1.6} can be explained if we define the \PT\:inner product as
-\begin{align}\label{eq:1.7}
+the unconventional $(-1)^n$ factor in \ref{eq:1.7} can be explained if we define the \PT\:inner product as
+\begin{align}\label{eq:1.8}
 \left ( f, g \right )  & = \int dx \left [ \mathcal{PT} f(x) \right ] g(x)\nonumber\\
                        & = \int dx f^{*}(-x) g(x).
 \end{align}
@@ -149,11 +164,11 @@ In quantum theory, the norm of states is interpreted as a probability and this m
 
 \subsubsection{\PT-symmetry breaking}\label{breaking}
 Most model \PT-symmetric Hamiltonians $\tilde{H}$ in the literature admit tuneable parameters such that there will be regions in the parameter space where the eigenstates of $\tilde{H}$ are not \PT-symmetric\cite{Brody_2013}. This means that a system described by $\tilde{H}$ admits two phases, one for broken and another for unbroken \PT-symmetry. In the unbroken phase eigenstates of $\tilde{H}$ become degenerate and this implies that they lose completeness\cite{Brody_2013}. The literature claims that for any theory with unbroken \PT-symmetry there exists a symmetry of the Hamiltonian that describes the negative and positive norm states. To describe this symmetry of $\hat{H}$ it is necessary to construct a linear operator denoted by \CC\cite{MustaHbeHermitian}\cite{ComplexExtension}\cite{Bender_2004}. When represented in position space \CC\: is a sum over the energy eigenstates of $\hat{H}$:
-\begin{equation}\label{eq:1.8}
+\begin{equation}\label{eq:1.9}
 \mathcal{C} = \sum_n \phi_n(x)\phi_n(y)
 \end{equation}
 From this definition, and from the relation $(\phi_m(y), \phi_n(y)) = \int dy\:\phi_m(y)\phi_n(y)$ we can verify that the eigenvalues of \CC\: are $\pm 1$
-\begin{align}\label{eq:1.9}
+\begin{align}\label{eq:1.10}
 \mathcal{C} \phi_n(x) & = \int dy\:\mathcal{C}\:\phi_n(y)\nonumber \\
 & = \sum_{m}\phi_m(x)\int dy\:\phi_m(y) \phi_n(y)\nonumber \\
 & = (-1)^n \phi_n(x)
@@ -161,33 +176,33 @@ From this definition, and from the relation $(\phi_m(y), \phi_n(y)) = \int dy\:\
 The \PT\:norm signatures can therefore be interpreted as the ``charge'' of the states, while \CC\: is the operator used to measure this charge\cite{Bender_2004}.
 
 The \CC\: operator commutes with the \PT\: operator, but it does not commute with the parity operator \PP. Notice that \CC\:and \PP\: operators are square roots of $\delta(x-y)$ the unity operator\cite{ComplexExtension}
-\begin{equation}\label{eq:1.10}
+\begin{equation}\label{eq:1.11}
 \mathcal{P}^2 = \mathcal{C}^2 = \mathds{1}, 
 \end{equation}
 where $\mathcal{P} \neq \mathcal{C}$, since \PP\: is real and \CC\: is complex valued\cite{MustaHbeHermitian}\cite{Bender_2004}.
 
 Using the newly constructed \CC\: operator, we can redesign the \PT\: inner product to suit the conventional probabilistic interpretation of the vector norms in quantum mechanics
-\begin{equation}\label{eq:1.11}
+\begin{equation}\label{eq:1.12}
 \left( f, g \right ) = \int dx \left [ \mathcal{CPT} f(x) \right ] g(x).
 \end{equation}
 
 \subsection{$2\times2$ \PT-symmetric Hamiltonian}
 An example of the results of unbroken \PT-symmetric theory that is often found in the literature describes a simple finite non-Hermitian but \PT-symmetric Hamiltonian
-\begin{equation}\label{eq:1.12}
+\begin{equation}\label{eq:1.13}
 \tilde{H} = \begin{pmatrix}
 re^{i\theta} & s  \\
 s & re^{-i\theta} \\
 \end{pmatrix}
 \end{equation}
 where the parameters $r, s$ and $\theta$ are real. In this setup the \TT\: operator performs complex conjugation and the parity operator is written as
-\begin{equation}\label{eq:1.13}
+\begin{equation}\label{eq:1.14}
 \mathcal{P} = \begin{pmatrix}
 0 & 1  \\
 1 & 0 \\
 \end{pmatrix}.
 \end{equation}
-The Hamiltonian in \ref{eq:1.12} allows two parametric regions. When $s^2 < r^2\sin^2\theta$ the eigenvalues of $\tilde{H}$ form a complex conjugate pair. This is the broken \PT-symmetry region. Otherwise, when $s^2 \geq r^2\sin^2\theta$, then the eigenvalues are real. This is the region of unbroken \PT-symmetry region. In the unbroken symmetry region the \PT\: normalised eigenstates of both $\tilde{H}$ and \PT\: are
-\begin{equation}\label{eq:1.14}
+The Hamiltonian in \ref{eq:1.13} allows two parametric regions. When $s^2 < r^2\sin^2\theta$ the eigenvalues of $\tilde{H}$ form a complex conjugate pair. This is the broken \PT-symmetry region. Otherwise, when $s^2 \geq r^2\sin^2\theta$, then the eigenvalues are real. This is the region of unbroken \PT-symmetry region. In the unbroken symmetry region the \PT\: normalised eigenstates of both $\tilde{H}$ and \PT\: are
+\begin{equation}\label{eq:1.15}
 \ket{E_{+}} = \frac{1}{\sqrt{2\cos\alpha}}\begin{pmatrix}
 e^{i\alpha/2} \\
 e^{-i\alpha/2} \\
@@ -198,64 +213,44 @@ e^{-i\alpha/2} \\
 \end{equation}
 we use the relation $\sin\alpha = \frac{r}{s}\sin\theta$.
 The corresponding \CC operator for this Hamiltonian is 
-\begin{equation}\label{eq:1.15}
+\begin{equation}\label{eq:1.16}
 \mathcal{C} = \frac{1}{\cos\alpha}\begin{pmatrix}
 i\sin\alpha & 1 \\
 1 & -i\sin\alpha\\
 \end{pmatrix},
 \end{equation}
-This \CC\: operator commutes with $\tilde{H}$ and satisfies \CC\:$= \hat{\mathbb{I}}$. The eigenvalues of \CC\:are precisely the signs of the \PT\:norms of the corresponding eigenstates\cite{Bender_2004}. Using this \CC\: operator we can guarantee that the \CC\PT inner product in the two-dimensional Hilbert space spanned by $\ket{E_{\pm}}$ is positive definite.
+This \CC\: operator commutes with $\tilde{H}$ and satisfies $\mathcal{C}^2= \mathds{1}$. The eigenvalues of \CC\:are precisely the signs of the \PT\:norms of the corresponding eigenstates\cite{Bender_2004}. Using this \CC\: operator we can guarantee that the \CC\PT inner product in the two-dimensional Hilbert space spanned by $\ket{E_{\pm}}$ is positive definite.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Time evolution}\label{Tev}
-The aim of this section is to illustrate the dynamics of non-Hermitian \PT-symmetric Hamiltonians. In Hermitian quantum mechanics, time-evolution of states is done by using the unitary operator $\hat{U} = e^{-i\hat{H}t/\hbar}$. Because the $\hat{U}$ operator is unitary this means that as the state $\vec{\psi}$ evolves in time, its norm remains constant. This is useful in quantum mechanics because the norm of a state is interpreted as a probability, and therefore unitarity guarantees that a state's probability does not grow or decay with time. As explained in section \ref{CPT}, when the \PT-symmetry of $\hat{H}$ is unbroken we have positive definite \CPT norm states. This means that time evolution under the unbroken \PT-symmetric framework is also unitary\cite{Jones-Smith}\cite{ComplexExtension}\cite{Mostafazadeh2}. 
+The aim of this section is to illustrate the dynamics of non-Hermitian \PT-symmetric Hamiltonians. In Hermitian quantum mechanics, time-evolution of states is done by using the unitary operator $\hat{U} = e^{-i\hat{H}t/\hbar}$. Because the $\hat{U}$ operator is unitary this means that as the state $\vec{\psi}$ evolves in time, its norm remains constant. This is useful in quantum mechanics because the norm of a state is interpreted as a probability, and therefore unitarity guarantees that a state's probability does not grow or decay with time. As explained in section \ref{CPT}, when the \PT-symmetry of $\hat{H}$ is unbroken it is possible to have positive definite \CPT norm states for the non-Hermitian Hamiltonian. This means that time evolution under the unbroken \PT-symmetric framework is also unitary\cite{Jones-Smith}\cite{ComplexExtension}\cite{Mostafazadeh2}. 
 The unitary time evolution of a state $\vec{\psi}$ from time $t = 0$ to an arbitrary time $t$ is written as
-\begin{equation}\label{eq:1.13}
+\begin{equation}\label{}
 \vec{\psi}(t) = \hat{U} \vec{\psi}(0).
 \end{equation}
 
-% \cite{passage_t}
-
-% a (unbroken) \PT-symmetric non-Hermitian Hamiltonian $\tilde{H}$.  The main purpose of this comparison is to identify which kind of Hamiltonian promotes the ``speediest" time evolution in a Hilbert space $\mathcal{H}$ spanned by $\ket{\psi_{i}}$ and $\ket{\psi_{f}}$, or in other words, we aim to find whether the shortest lapsed time for the time evolution occurs when we use either a $\hat{H}$ or $\tilde{H}$. The premise of Hermitian dynamics is that evolution of states requires a non zero amount of time, provided that the difference between the largest and smallest eigenvalues of the hermitian Hamiltonian $\hat{H}$ remains fixed\cite{Bender_2007}
-
-
-% Since the \PT-symmetry of the non-Hermitian Hamiltonian $\tilde{H}$ is unbroken, its eigenvalues are also real valued, therefore we can also  impose \ref{eq:2.8} when dealing with the dynamics under $\tilde{H}$.
-% We choose the basis so that the initial and final states are
-% \begin{align}\label{eq:2.9}
-% \ket{\psi_{i}} = \begin{pmatrix}
-% 1\\
-% 0\\
-% \end{pmatrix}, \quad\ket{\psi_f} = \begin{pmatrix}
-% a\\
-% b\\
-% \end{pmatrix}
-% \end{align}
-% where $a$ and $b$ are chosen such that $|a|^2 + |b|^2 = 1$\cite{Bender_2007}.
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Project statement}\label{mine}
-My project is concerned with the dynamical processes of non-Hermitian systems.
-
-
-
-\section{Parametric family of PTsNHH}\label{}
-
-% Let us consider the family of parametric Hamiltonians possessing \PT\:symmetry
-% \begin{equation}\label{eq:}
-% \hat{H} = \hat{p}^2 + \hat{x}^{2}(i x)^{\epsilon} \quad\quad (\epsilon\:\mathrm{real}). 
-% \end{equation}
-% The Hamiltonian in \ref{eq:} has unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT\:symmetry when $\epsilon < 0$. The energy spectrum of \ref{eq:} has been proved to be real and bounded below in the region of unbroken \PT\:symmetry \cite{Dorey_2004}. 
-% This particular family of Hamiltonians is useful to us as an example because we can demonstrate how by carefully choosing the boundary conditions associated with its eigenvalue problem  
-% \begin{equation}\label{eq:}
-%  -\psi''_{n}(x) + x^2(ix)^{\epsilon}\psi_n(x) = E_n \psi_n(x), 
-% \end{equation}
-% where for $\epsilon\geq 0$ and for $x$ located in an infinite contour in the complex-x plane, $\psi(x) \rightarrow 0$ exponentially rapidly as $|x| \rightarrow \infty$. 
-
-% There is evidence that suggests that, when properly normalised, the eigenfunctions $\psi(x)$ form a complete set\cite{MustaHbeHermitian}.
+We are concerned with the dynamical processes of non-Hermitian systems. Specifically we are interested in understanding the behaviour of quantum mechanical superfluids in non-Hermitian traps. Previously we have investigated the well known parametric family of \PT-symmetric Hamiltonians
+\begin{equation}\label{eq:3.1}
+\hat{H} = \hat{p}^2 + \hat{x}^{2}(i x)^{\epsilon} \quad\quad (\epsilon\:\mathrm{real}). 
+\end{equation}
+The Hamiltonian in \ref{eq:3.1} has unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT-symmetry when $\epsilon < 0$. The energy spectrum of \ref{eq:3.1} has been proved to be real and bounded below in the region of unbroken \PT\:symmetry \cite{Dorey_2004}. In figure \ref{fig:parametricfam} both these regions and the phase transition the spectrum are visible.
+\begin{Figure}
+\centering
+\includegraphics[width=0.7\linewidth]{parametric_fam.pdf}
+\captionof{figure}{This figure is my version of Figure 1. in reference \cite{MakingSense}, it exemplifies the behaviour of the eigenvalue spectra of the Hamiltonians in \ref{eq:3.1} as a function of the real parameter $\epsilon$. All the eigenvalues visible in this figure are real valued. The vertical dotted green line corresponds to the value $\epsilon = 0$, this is the point where \PT-symmetry breaks and it corresponds to the Hamiltonian for the classic one dimensional harmonic oscillator. When $\epsilon \geq 0$ the spectra are real, positive and discrete. Energy levels increase with increasing $\epsilon$. In the region corresponding to $-1 \leq \epsilon \leq 0$ there is a finite number of real positive eigenvalues and an infinite number of complex-conjugate pairs of eigenvalues (not depicted). The number of real eigenvalues decreases as $\epsilon$ decreases from $0$ to $-1$, for $\epsilon$ that are more negative than the value $\epsilon = -0.57793$ the only remaining real eigenvalue corresponds to the ground-state energy. At the value $\epsilon = -1$ the spectrum is null  as all eigenvalues diverge towards positive infinity.}
+\label{fig:parametricfam}
+\end{Figure}
+The particular Hamiltonian that we use in my project occurs when we let $\epsilon = 2$ in \ref{eq:3.1}
+\begin{equation}\label{eq:3.2}
+\hat{H} = \hat{p}^2 - \hat{x}^{4};
+\end{equation}
+this Hamiltonian is interesting because even though it posseses an upside-down potential, it nevertheless appears to have a fully real and bounded below energy spectrum\cite{UpsideDownPotentials} as can be seen in figure \ref{fig:parametricfam}. Our present aim is to simulate the dynamics of a trapped state after we implement a quench that would instantaneously change the trapping potential from a harmonic oscillator trap to the inverted quartic potential in \ref{eq:3.2}.
 
 
 \section{Investigating \PT-symmetric time evolution}
-Here I include some of the progress I made in my work on the dynamics of Hamiltonians under the \PT-symmetric Framework. 
+Here I include some of the progress I made in my work on the dynamics under the \PT-symmetric Framework. 
 % For $\tilde{H}$ whose eigenvectors span the Hilbert space $\mathcal{H}$\cite{Bender_2007}. Without loss of generality, since we are dealing with a two-level system, it is useful to use the Bloch sphere to visualise the geometry of this system. Let the eigenvectors of $\tilde{H}$ be
 % \begin{align}\label{eq:1.13}
 % \ket{\psi_{i}} = \begin{pmatrix}
@@ -411,6 +406,13 @@ In the case of unbroken \PT-symmetry of a Hamiltonian $\tilde{H}$ with eigenfucn
 % The class of \PT-symmetric Hamiltonians is larger than and includes Hermitian Hamiltonians because any real symmetric Hamiltonian is automatically \PT-symmetric\cite{MustaHbeHermitian}
 
 
+% This means the domain of integration, which makes
+% the eigenvalue problem of the non-Hermitian Hamilto-
+% nian operator in (1) in position space well defined for the
+% asymptotic boundary condition Φ(z) → 0 exponentially
+% for |z| → ∞ is any path in the complex z-plane which re-
+% mains inside the wedges and when it approaches
+% complex infinity\cite{Faria1}.
 
 \bibliographystyle{unsrturl_mod}
 \bibliography{mybib}
