@@ -13,26 +13,9 @@ The theory underlying these techniques at the level that will be required by you
 
 Do I clearly present my theme(s) ?
     bigpicture
- 
-
 
 % How do I my readings and observations to accomplish that? 
-
-I want to talk about 
-
-[X]    the C operator 
-
-[]    bi-orthogonality < MORE HER IN MAKING SENSE
-
-[]    time evolution
-
-[]    dictionary
 
     most recent findings
 
     Aspects have not been investigated 
-
-    what have I done
-        -formal equivalence dict
-        -
-        - conceptualise experimental application

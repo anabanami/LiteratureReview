@@ -94,8 +94,9 @@ In ``The principles of quantum mechanics", Paul Dirac advises us that``it is imp
 \end{equation}
 Despite of the correctness of Hermiticity, some believe that perhaps we have ended up with an overly restrictive quantum theory. Therefore the aim of this review is to summarize the present developments of a quantum theory that uses an alternative postulate to Hermiticity. This alternative postulate is referred to as space–time reflection symmetry (\PT\:symmetry)\cite{MustaHbeHermitian}. 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\texorpdfstring{$\mathcal{PT}$}\:-symmetry}\label{PT}
+\chapter{\texorpdfstring{$\mathcal{PT}$}\:-symmetry}\label{PT}
 In the late nineties, Carl Bender and colleagues presented a \PT-symmetric theory of quantum mechanics. Their aim was to explain a conjecture on the reality and positiveness of the spectrum of a non-Hermitian Hamiltonian proposed by Bessis\cite{RealSpectrainNHH}, this Hamiltonian spectrum was surprising since it was widely thought that non-Hermitian Hamiltonians would not have physically valid energy spectra. In very general terms, \PT-symmetric theory can be viewed as an analytical continuation of the conventional theory from real into the complex phase space\cite{PTsymmetricQM}.
 
 An important question that must be answered, is whether a \PT-symmetric Hamiltonian defines a valid physical theory of quantum mechanics. By a physical theory we mean that the following conditions must be satisfied; The energy spectra of a system described by $\hat{H}$ must be real and bounded below. Another condition is related to the probabilistic interpretation of the norm of a state, a norm must be always positive to be a valid probability. Finally, time evolution under the theory must be unitary. This means that as a state vector evolves in time the state's probability does not leak away\cite{MustaHbeHermitian}\cite{MakingSense}.
@@ -106,8 +107,8 @@ The \PT\:operator is the anti-linear operator composed of the linear parity oper
 \begin{equation}\label{eq:1.2}
 \begin{split}
 \mathcal{P}:& \quad\hat{x} \rightarrow -\hat{x},\quad \hat{p} \rightarrow -\hat{p},\\
-\mathcal{T}:& \quad\hat{x} \rightarrow \hat{x},\quad\quad \hat{p} \rightarrow -\hat{p},\quad \mathrm{i} \rightarrow -\mathrm{i}.
-\end{split}
+\mathcal{T}:& \quad\hat{x} \rightarrow \hat{x},\quad\quad \hat{p} \rightarrow -\hat{p},\quad \mathrm{i} \rightarrow -\mathrm{i}
+\end{split}.
 \end{equation}
 Some Hamiltonians may not be symmetric under \PP\:or \TT\:separately, but Hamiltonians that remain invariant under the influence of the \PT\:operator are labelled as \PT-symmetric. 
 A Hamiltonian $\hat{H}$ will possess unbroken \PT\:symmetry if the following conditions are satisfied
@@ -122,7 +123,6 @@ If both conditions in \ref{eq:1.3} hold then the \PT-symmetry of $\tilde{H}$ is 
 \captionof{figure}{Illustration of the conditions in equations \ref{eq:1.3}. \PT-symmetry and the reality of eigenvalues. This figure is strongly inspired by figure 2 in reference \cite{Faria1}}
 \label{fig:eigenvalues}
 \end{Figure}
-
 The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been shown in various works, such as Dorey et al\cite{Dorey_2001}, Bender and Boettcher\cite{Bender1998}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PTsymmetricQM}, Mostafazadeh\cite{Mostafazadeh}\cite{Mostafazadeh2} amongst others. 
 
 
@@ -162,8 +162,9 @@ the unconventional $(-1)^n$ factor in \ref{eq:1.7} can be explained if we define
 where the integral above follows a path in the complex plane. Under this definition the eigenstate norms alternate in sign depending on the value $n$. This means that the metric associated with the \PT\: inner product is indefinite\cite{Bender_2004}\cite{Critique}.
 In quantum theory, the norm of states is interpreted as a probability and this means that the indefinite metric described above presents a serious problem for the validity of \PT-symmetric quantum theory. The solution to this problem lies in finding an interpretation for the negative valued norms\cite{PTsymmetricQM}.
 
-\subsubsection{\PT-symmetry breaking}\label{breaking}
-Most model \PT-symmetric Hamiltonians $\tilde{H}$ in the literature admit tuneable parameters such that there will be regions in the parameter space where the eigenstates of $\tilde{H}$ are not \PT-symmetric\cite{Brody_2013}. This means that a system described by $\tilde{H}$ admits two phases, one for broken and another for unbroken \PT-symmetry. In the unbroken phase eigenstates of $\tilde{H}$ become degenerate and this implies that they lose completeness\cite{Brody_2013}. The literature claims that for any theory with unbroken \PT-symmetry there exists a symmetry of the Hamiltonian that describes the negative and positive norm states. To describe this symmetry of $\hat{H}$ it is necessary to construct a linear operator denoted by \CC\cite{MustaHbeHermitian}\cite{ComplexExtension}\cite{Bender_2004}. When represented in position space \CC\: is a sum over the energy eigenstates of $\hat{H}$:
+Most model \PT-symmetric Hamiltonians $\tilde{H}$ in the literature admit tuneable parameters such that there will be regions in the parameter space where the eigenstates of $\tilde{H}$ are not \PT-symmetric\cite{Brody_2013}. This means that a system described by $\tilde{H}$ admits two phases, one for broken and another for unbroken \PT-symmetry. In the unbroken phase eigenstates of $\tilde{H}$ become degenerate and this implies that they lose completeness\cite{Brody_2013}. 
+
+The literature claims that for any theory with unbroken \PT-symmetry there exists a symmetry of the Hamiltonian that describes the negative and positive norm states. To describe this symmetry of $\hat{H}$ it is necessary to construct a linear operator denoted by \CC\cite{MustaHbeHermitian}\cite{ComplexExtension}\cite{Bender_2004}. When represented in position space \CC\: is a sum over the energy eigenstates of $\hat{H}$:
 \begin{equation}\label{eq:1.9}
 \mathcal{C} = \sum_n \phi_n(x)\phi_n(y)
 \end{equation}
@@ -223,13 +224,42 @@ This \CC\: operator commutes with $\tilde{H}$ and satisfies $\mathcal{C}^2= \mat
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Time evolution}\label{Tev}
-The aim of this section is to illustrate the dynamics of non-Hermitian \PT-symmetric Hamiltonians. In Hermitian quantum mechanics, time-evolution of states is done by using the unitary operator $\hat{U} = e^{-i\hat{H}t/\hbar}$. Because the $\hat{U}$ operator is unitary this means that as the state $\vec{\psi}$ evolves in time, its norm remains constant. This is useful in quantum mechanics because the norm of a state is interpreted as a probability, and therefore unitarity guarantees that a state's probability does not grow or decay with time. As explained in section \ref{CPT}, when the \PT-symmetry of $\hat{H}$ is unbroken it is possible to have positive definite \CPT norm states for the non-Hermitian Hamiltonian. This means that time evolution under the unbroken \PT-symmetric framework is also unitary\cite{Jones-Smith}\cite{ComplexExtension}\cite{Mostafazadeh2}. 
-The unitary time evolution of a state $\vec{\psi}$ from time $t = 0$ to an arbitrary time $t$ is written as
+In Hermitian quantum mechanics, time-evolution of states is done by using the unitary operator $\hat{U} = e^{-i\hat{H}t/\hbar}$. Because the $\hat{U}$ operator is unitary this means that as the state $\vec{\psi}$ evolves in time, its norm remains constant. This is useful in quantum mechanics because the norm of a state is interpreted as a probability, and therefore unitarity guarantees that a state's probability does not grow or decay with time. As explained in section \ref{CPT}, when the \PT-symmetry of $\hat{H}$ is unbroken it is possible to have positive definite \CPT norm states for the non-Hermitian Hamiltonian. This means that time evolution under the unbroken \PT-symmetric framework is also unitary\cite{Jones-Smith}\cite{ComplexExtension}\cite{Mostafazadeh2}. 
+The unitary time evolution of a state $\vec{\psi}$ from time $t = 0$ to a time $t$ is written as
 \begin{equation}\label{}
 \vec{\psi}(t) = \hat{U} \vec{\psi}(0).
 \end{equation}
 
+\section{Time evolution under broken \PT-symmetry}
+
+
+>>>>> ?????? >>>>>
+
+
+
+
+
+\section{Faster than Hermitian time evolution?}\label{faster}
+It has been suggested in \cite{Bender_2007} that it is possible to obtain arbitrarily fast quantum evolutions using non-Hermitian \PT-symmetric Hamiltonian operators. This is because for such Hamiltonians the path from can be made short. 
+The mechanism described in \cite{Bender_2007} is similar to that in general relativity in which the distance between two space-time points can be made small if they are connected by a wormhole. If true, The results in \cite{Bender_2007} will have drastic consequences in quantum computation, because it removes the bound on the time-optimal unitary NOT operations\cite{OptimalControl} that is obtained in quantum mechanics\cite{Brachistochrone_Mostafazadeh}. However, Bender et al warn us about the possibility of the existence of quantum protection mechanisms that place a lower bound on the time required to switch Hilbert spaces. which would limit the applicability of a Hilbert-space ``wormhole" to improve quantum algorithms\cite{Bender_2007}. 
+
+G\"{u}nther and Samsonov have interpreted the \PT-symmetric setup for \cite{Bender_2007} as a quantum system
+consisting of a non-Hermitian \PT-symmetric component and a Hermitian component simultaneously. In \cite{Gunther_2008} G\"{u}nther and Samsonov formulate a general recipe for the construction of partially \PT-symmetric quantum
+systems which are not 1:1 equivalent to purely Hermitian systems. Using a strong structural analogy with the
+reference frames for inertial observers in special relativity, they associate \PT-symmetric models in different
+representations with corresponding measurement frames. They claim that the resultant operators which are Dirac Hermitian
+are connected with non-Dirac-Hermitian operators in another frame. The probabilistic content of the models
+is frame-independent. According to G\"{u}nther and Samsonov their geometric analysis of the equivalence mapping between mutually \PT-symmetric and Hermitian operators demonstrates the agreement of the vanishing passage-time solution proposed in \cite{Bender_2007} and the temporal lower bound for Hermitian evolution proposed by Anandan and Aharonov in \cite{AnandanAharonov}. 
+
+The experimental application of complex non-Hermitian Hamiltonians with \PT-symmetry in dynamical processes is an intriguing and promising field. 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Experiments}
+
+Much research has been carried out on properties of physical systems described by \PT-symmetry. Such Hamiltonians can be used to model the behavior of closed quantum systems, but they can also be replicated in open systems which exhibit balanced gain and loss, and this has been implemented in laboratory experiments for a wide range of systems\cite{geometric_aspects}.  
+
+
+
 \chapter{Project statement}\label{mine}
 We are concerned with the dynamical processes of non-Hermitian systems. Specifically we are interested in understanding the behaviour of quantum mechanical superfluids in non-Hermitian traps. Previously we have investigated the well known parametric family of \PT-symmetric Hamiltonians
 \begin{equation}\label{eq:3.1}
@@ -289,6 +319,8 @@ Here I include some of the progress I made in my work on the dynamics under the 
 % \captionof{figure}{}
 % \label{fig:}
 % \end{Figure}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
