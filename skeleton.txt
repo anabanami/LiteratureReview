@@ -1,21 +1,8 @@
-The relevant theory behind your project;
-
 The background experiments and results which are already published;
 
-The specific nature of the materials and/or techniques which are to be employed;
-
-The theory underlying these techniques at the level that will be required by you in interpreting data to be collected during your project research; and
+The theory underlying these techniques at the level that will be required by you in interpreting data to be collected during your project research
 
 (specifically for students undertaking a theoretical project) a detailed discussion of the theoretical/mathematical background to the project together with the demonstration of an awareness of the experimental evidence supporting the theoretical models.
 
-
-
-
-Do I clearly present my theme(s) ?
-    bigpicture
-
-% How do I my readings and observations to accomplish that? 
-
-    most recent findings
 
     Aspects have not been investigated 
