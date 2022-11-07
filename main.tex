@@ -73,7 +73,7 @@
 
 \tableofcontents
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introduction}\label{Introduction}
 In ``The principles of quantum mechanics", Paul Dirac advises us that``it is important to remember that science is concerned only with \textit{observable} things and that we can observe an object only by letting it interact with some outside influence"\cite{POQM}. Observable interactions are measurable phenomena and overtime physicists have attempted to explain a number of experimental results with a set of ad-hoc rules that came to be known as the fundamental postulates of quantum theory. Nearly all these postulates are based in physical properties. For example, one postulate establishes that time evolution of a quantum system must be probability conserving. Another postulate requires that the energy spectrum of the system is bounded below so a lowest energy state can be measured. In quantum mechanics, the Hamiltonian operator $(\hat{H})$ encapsulates the total energy of a system. A system's energy spectrum is required to be bounded and real in order to be measurable. According to the fundamental postulates of the standard theory, if an operator $\hat{O}$ satisfies the mathematical property known as Hermiticity, then $\hat{O}$ will satisfy the other postulates of quantum theory.
 
@@ -84,14 +84,14 @@ If $\hat{O}$ is Hermitian then it has the property that its effect on the vector
 It may appear to the reader that there is no compelling reason to change this convenient mathematical assumption, since Hermiticity results in a ``correct" theory of quantum mechanics. But despite the correctness of Hermiticity, this postulate may have lead us to an overly restrictive quantum theory. The philosophically curious physicist will perhaps be persuaded to expand their mathematical toolbox by learning that not all non-Hermitian Hamiltonians describe physically invalid systems. Here it is relevant to quote Gell-Mann's totalitarian principle: ``Anything not forbidden is compulsory". This means that if there exists an alternative non-Hermitian quantum theory then we must use it to study this class of Hamiltonians.
 It is the goal of this review to demonstrate that new and physically relevant theories have been developed by considering an alternative postulate to Hermiticity. This alternative postulate is referred to as space–time reflection symmetry (\PT\:symmetry)\cite{MustaHbeHermitian}. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{\texorpdfstring{$\mathcal{PT}$}\:-symmetry}\label{PT}
 In the late nineties, Bender and Boettcher presented a \PT-symmetric theory of quantum mechanics. Their aim was to explain a conjecture on the reality and positiveness of the spectrum of a non-Hermitian Hamiltonian proposed by Bessis in their private correspondence\cite{RealSpectrainNHH}. Bessis' conjecture was surprising since it was widely thought that non-Hermitian Hamiltonians would not have physically valid energy spectra. 
 \PT-symmetric theory has since then become established and the scientists involved have produced a multitude of theoretical works and experimental proposals demonstrating that non-Hermitian \PT-symmetric models can be used as an extension to conventional quantum theory.
 
 An important question that must be answered, is whether a non Hermitian \PT-symmetric Hamiltonian defines a valid physical theory of quantum mechanics. By a physical theory we mean that the following conditions must be satisfied; The energy spectrum of a system described by $\hat{H}$ must be real and bounded below. Another condition is related to the probabilistic interpretation of the norm of a state, a norm must be always positive to be a valid probability. Finally, time evolution under the theory must be unitary. This means that as a state vector evolves in time the state's probability does not leak away\cite{MustaHbeHermitian,MakingSense}. To answer this question, in this chapter I will present the theoretical background behind \PT-symmetric quantum theory.  
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The \texorpdfstring{$\mathcal{PT}$}\: operator}
 The \PT\:operator is the anti-linear operator composed of the linear parity operator (\PP), which performs spatial reflection, and the anti-linear time-reversal operator (\TT). These operators act on position and momentum operators in the following form
 \begin{equation}\label{eq:2.1}
@@ -115,21 +115,20 @@ If both conditions in \ref{eq:2.2} hold then the \PT-symmetry of $\tilde{H}$ is 
 \end{Figure}
 Most model \PT-symmetric Hamiltonians $\tilde{H}$ in the literature admit tunable parameters such that there will be regions in the parameter space where the eigenstates of $\tilde{H}$ are not \PT-symmetric\cite{Brody_2013}. This means that a system described by $\tilde{H}$ admits two phases, one for broken and another for unbroken \PT-symmetry. In the unbroken phase eigenstates of $\tilde{H}$ become degenerate and this implies that they lose completeness\cite{Brody_2013}. 
 
-The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been shown in various works, such as Dorey et al\cite{Dorey_2001}, Bender and Boettcher\cite{RealSpectrainNHH}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PTsymmetricQM}, Mostafazadeh\cite{Mostafazadeh}\cite{Mostafazadeh2} among others. 
+The effectiveness of \PT\:symmetry as a tool to investigate the spectra of some non-Hermitian Hamiltonians has been shown in various works, such as Dorey et al\cite{Dorey_2001, Dorey_2004}, Bender and Boettcher\cite{RealSpectrainNHH}, Brody\cite{Brody_2016}, Bender and Mannheim \cite{Bender_2010}, Bender et al\cite{PTsymmetricQM} among others.
 To ensure that the eigenstates $\{\ket{\psi_n}\}$ of a \PT-symmetric Hamiltonian $\tilde{H}$ are orthogonal, it is necessary to specify an inner product. A possible choice for the inner product associated with $\tilde{H}$ might be\cite{PTsymmetricQM}
 \begin{equation}\label{eq:2.3}
 \braket{\psi_n|\psi_m} \equiv \int_{c} dx [\psi_{n}(x)]^{\mathcal{PT}}\psi_m(x) = \int_{c} dx [\psi_{n}(-x)]^{*}\psi_m(x)
 \end{equation}
 where $c$ is a complex contour that starts and ends within specific boundary conditions (see section \ref{Stokes}). Unfortunately this obvious choice for the \PT\:inner product is not correct because it does not guarantee a positive definite norm.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The \texorpdfstring{$\mathcal{CPT}$}\:\:inner product}\label{CPT}
 To be able to describe precisely the nature of \PT-symmetric quantum mechanics, we must delve briefly into the inner-product under which our theory satisfies the postulates of conventional quantum mechanics. It is important to note that \PT-symmetric quantum mechanics is a kind of `bootstrap' theory\cite{MakingSense}, since infinitely many inner-products exist for a given vector space, we can construct an inner product whose associated norm is positive definite by design. This inner-product is in general dependent on the characteristics of the Hamiltonian in question and it guarantees that the underlying dynamics of any \PT-symmetric Hamiltonian satisfies unitarity\cite{MustaHbeHermitian}.
 Firstly, it is necessary to solve for the eigenstates of the Hamiltonian before knowing the Hilbert space and consequentially the associated inner product.
 To guarantee a positive norm for our theory, we will construct a new linear operator \CC\:that commutes with both $\hat{H}$ and \PT. We use the symbol \CC\: to represent this symmetry because it's properties are similar to those of the charge conjugation operator in particle physics\cite{MakingSense}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The $\mathcal{C}$ operator}\label{CC}
 When the \PT-symmetry of $\hat{H}$ is unbroken, the eigenfunctions $\psi_n(x)$ of $\hat{H}$ are simultaneously eigenstates of the \PT\:operator\cite{Bender_2004}
 \begin{equation}\label{eq:2.4}
@@ -194,17 +193,22 @@ where the parameters $r, s$ and $\theta$ are real. In this set-up the \TT\: oper
 \end{pmatrix}.
 \end{equation}
 
-This 
-
-
-
-
-
-
-
-
-
-The Hamiltonian in \ref{eq:2.12} allows two parametric regions. When $s^2 < r^2\sin^2\theta$ the eigenvalues of $\tilde{H}$ form a complex conjugate pair. This is the broken \PT-symmetry region. Otherwise, when $s^2 \geq r^2\sin^2\theta$, then the eigenvalues are real. This is the region of unbroken \PT-symmetry region. In the unbroken symmetry region the \PT\: normalised eigenstates of both $\tilde{H}$ and \PT\: are
+We can show that the Hamiltonian in \ref{eq:2.12} is \PT-symmetric
+\begin{equation*}
+\mathcal{PT}\tilde{H}\mathcal{PT} =\begin{pmatrix}
+0 & 1  \\
+1 & 0 \\
+\end{pmatrix}
+\begin{pmatrix}
+re^{-i\theta} & s  \\
+s & re^{i\theta} \\
+\end{pmatrix}
+\begin{pmatrix}
+0 & 1  \\
+1 & 0 \\
+\end{pmatrix} = \tilde{H}.
+\end{equation*}
+The \ref{eq:2.12} Hamiltonian is written in operator form as $\tilde{H} = r\cos\theta \hat{\mathbb{I}} + \frac{\omega}{2} \vec{\sigma}\cdot\hat{n}$, where $\vec{\sigma}$ is the three dimensional Pauli vector and $\hat{n}$ is a normal vector. The eigenvalues of this Hamiltonian are $E_{\pm} = r\cos\theta \pm \sqrt{s^2 - r^2\sin^2\theta}$. We can see that the Hamiltonian allows two parametric regions. When $s^2 < r^2\sin^2\theta$ the eigenvalues of $\tilde{H}$ form a complex conjugate pair. This is the broken \PT-symmetry region. Otherwise, when $s^2 \geq r^2\sin^2\theta$, then the eigenvalues are real. This is the region of unbroken \PT-symmetry region. In the unbroken symmetry region the \PT\:normalised eigenstates of both $\tilde{H}$ and \PT\:are
 \begin{equation}\label{eq:2.14}
 \ket{E_{+}} = \frac{1}{\sqrt{2\cos\alpha}}\begin{pmatrix}
 e^{i\alpha/2} \\
@@ -215,16 +219,16 @@ e^{-i\alpha/2} \\
 \end{pmatrix},
 \end{equation}
 we use the relation $\sin\alpha = \frac{r}{s}\sin\theta$.
-The corresponding \CC operator for this Hamiltonian is 
+The corresponding \CC\:operator for this Hamiltonian is 
 \begin{equation}\label{eq:2.15}
 \mathcal{C} = \frac{1}{\cos\alpha}\begin{pmatrix}
 i\sin\alpha & 1 \\
 1 & -i\sin\alpha\\
 \end{pmatrix}.
 \end{equation}
-This \CC\: operator commutes with $\tilde{H}$ and satisfies $\mathcal{C}^2= \mathds{1}$. The eigenvalues of \CC\:are precisely the signs of the \PT\:norms of the corresponding eigenstates\cite{Bender_2004}. Using this \CC\: operator we can guarantee that the \CC\PT inner product in the two-dimensional Hilbert space spanned by $\ket{E_{\pm}}$ is positive definite.
+This \CC\:operator commutes with $\tilde{H}$ and satisfies $\mathcal{C}^2= \mathds{1}$. The eigenvalues of \CC\:are precisely the signs of the \PT\:norms of the corresponding eigenstates\cite{Bender_2004}. Using this \CC\: operator we can guarantee that the \CC\PT\:inner product in the two-dimensional Hilbert space spanned by $\ket{E_{\pm}}$ is positive definite.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Broken \PT-symmetry}\label{EPs}
 In contrast with unbroken symmetry, Hamiltonians with broken \PT-symmetry do not satisfy the spectral theorem and this gives rise to very unconventional quantum mechanical behaviour. Hamiltonians with broken \PT-symmetry exhibit purely non-Hermitian spectral degeneracies known as exceptional points (EP)\cite{Bossart}.
 EPs are points in an (at least) two-dimensional parameter space, in which two or more eigenstates become identical\cite{Moiseyev}\cite{Cartarius}. That is, in the presence of EPs, the coalescence of eigenstates causes the collapse of the subspace dimension to one, because of this the eigenstate no longer forms a complete basis\cite{Bagarello}. The interest in these degeneracies has increased greatly since they give rise to dramatic effects in a great variety of physical problems: in mechanics, electromagnetism, atomic and molecular physics, quantum phase transitions, quantum chaos and more\cite{Heiss_2012}.
@@ -232,7 +236,7 @@ An illustrative example of EPs can be seen when we consider the well known famil
 \begin{equation}\label{eq:3.1}
 \hat{H} = \hat{p}^2 + \hat{x}^{2}(i x)^{\epsilon} \quad\quad (\epsilon\:\mathrm{real}). 
 \end{equation}
-These Hamiltonians have unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT-symmetry when $\epsilon < 0$. The energy spectrum of \ref{eq:3.1} has been proved to be real and bounded below in the region of unbroken \PT\:symmetry \cite{Dorey_2004}. In figure \ref{fig:parametricfam} both these regions and the phase transition the spectrum are visible.
+These Hamiltonians have unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT-symmetry when $\epsilon < 0$\cite{MakingSense}. The energy spectrum of \ref{eq:3.1} has been proved to be real and bounded below in the region of unbroken \PT\:symmetry \cite{Dorey_2004}. In figure \ref{fig:parametricfam} I present my numerical results demonstrating both these symmetry regions and the visible \PT\:phase transition that characterizes the spectra of these parametric Hamiltonians.
 \begin{Figure}
 \centering
 \includegraphics[width=0.6\linewidth]{parametric_fam.pdf}
@@ -248,20 +252,22 @@ In chapter \ref{MINE} we will investigate the unbroken symmetry region of figure
 \end{Figure}
 In figure \ref{fig:broken_region} there are three EPs of order 1 (EP1) and a single infinite order EP at $\epsilon=-1$. My numerics did not have enough resolution to represent the infinite order EP.\\
 
-When physicists test the character and behaviour of states and eigenvalues of EPs is common practice to encircle the EP on a closed contour in parameter space. For examples see chapter \ref{Experiments}. There are cases of EPs where eigenvalues and the wave functions are interchanged, For example, if the EP corresponds to a cubic root branch point. For a closed contour around this point a cyclic permutation of all three eigenvalues and eigenfunctions is then expected\cite{Cartarius}.
+When physicists test behaviour of states and eigenvalues under EPs is common practice to encircle the EP on a closed contour in parameter space. For examples see chapter \ref{Experiments}. There are cases of EPs where eigenvalues and the wave functions are interchanged, For example, if the EP corresponds to a cubic root branch point. For a closed contour around this point a cyclic permutation of all three eigenvalues and eigenfunctions is then expected\cite{Cartarius}.
 
 Time evolution at EPs differs from generic Hamiltonians in the sense that only one state evolves with the usual oscillations (possibly with overall damping or amplification), while other states remain inextricably coupled to this single eigenstate\cite{Bossart}. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Time evolution}\label{TEv}
 In Hermitian quantum mechanics, time-evolution of states is done by using the unitary operator $\hat{U} = e^{-i\hat{H}t/\hbar}$. Because the $\hat{U}$ operator is unitary this means that as the state $\vec{\psi}$ evolves in time, its norm remains constant. This is useful in quantum mechanics because the norm of a state is interpreted as a probability, and therefore unitarity guarantees that a state's probability does not grow or decay with time. As explained in section \ref{CPT}, when the \PT-symmetry of $\hat{H}$ is unbroken it is possible to have positive definite \CPT norm states for the non-Hermitian Hamiltonian. This means that time evolution under the unbroken \PT-symmetric framework is also unitary\cite{Jones-Smith}\cite{ComplexExtension}\cite{Mostafazadeh2}. 
 The unitary time evolution of a state $\vec{\psi}$ from time $t = 0$ to a time $t$ is written as
 \begin{equation}\label{eq:4.1}
 \vec{\psi}(t) = \hat{U} \vec{\psi}(0).
 \end{equation}
-An interesting feature of \PT-symmetric Hamiltonians has been suggested in \cite{Bender_2007}. According to this paper it is possible to obtain arbitrarily fast quantum evolutions using non-Hermitian \PT-symmetric Hamiltonian operators. This is because for such Hamiltonians the path from can be made short. A brief description of this work is described below.
+An interesting feature of \PT-symmetric Hamiltonians has been suggested in \cite{Bender_2007}. According to this paper it is possible to obtain arbitrarily fast quantum evolutions using non-Hermitian \PT-symmetric Hamiltonian operators. This is because for such Hamiltonians the path from can be made short by taking advantage of the Hilbert space geometry described by the Hamiltonian's eigenstates.
+%>>>MOREEEEEEEE
+A brief description of this work is described below.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Faster than Hermitian time evolution?}\label{faster}
 The mechanism described in \cite{Bender_2007} is similar to that in general relativity in which the distance between two space-time points can be made small if they are connected by a wormhole. If true, The results in \cite{Bender_2007} will have drastic consequences in quantum computation, because it removes the bound on the time-optimal unitary NOT operations\cite{OptimalControl} that is obtained in quantum mechanics\cite{Brachistochrone_Mostafazadeh}. However, Bender et al warn us about the possibility of the existence of quantum protection mechanisms that place a lower bound on the time required to switch Hilbert spaces. which would limit the applicability of a Hilbert-space ``wormhole" to improve quantum algorithms\cite{Bender_2007}. 
 
@@ -273,9 +279,9 @@ representations with corresponding measurement frames. They claim that the resul
 are connected with non-Dirac-Hermitian operators in another frame. The probabilistic content of the models
 is frame-independent. According to G\"{u}nther and Samsonov their geometric analysis of the equivalence mapping between mutually \PT-symmetric and Hermitian operators demonstrates the agreement of the vanishing passage-time solution proposed in \cite{Bender_2007} and the temporal lower bound for Hermitian evolution proposed by Anandan and Aharonov in \cite{AnandanAharonov}. 
 
-Despite the potential importance of \PT-symmetric theory, the experimental observation in a genuine quantum system is still missing\cite{Cartarius}. Therefore the purpose of our research is determine whether it is possible to observe the dynamical behaviour of a \PT-symmetric quantum in an experiment. 
+Despite the potential importance of \PT-symmetric theory, the experimental observation in a genuine quantum system is still missing\cite{Cartarius}. Therefore the purpose of our research is to determine whether it is possible to observe the dynamical behaviour of a \PT-symmetric quantum in an experiment. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Experiments}\label{Experiments}
 Much research has been carried out on properties of physical systems described by \PT-symmetry. Such Hamiltonians can be used to model the behaviour of closed quantum systems, but they can also be replicated in open systems which exhibit balanced gain and loss. This has been implemented in laboratory experiments for a wide range of systems\cite{geometric_aspects}, here are some brief examples.
 
@@ -307,33 +313,44 @@ the results for a lattice several kinds of terminations. Res\'endiz-V\'azquez et
 
 There is an ongoing quest devoted to investigating the advantages of extending quantum theory via \PT-symmetry. On occasion this has revealed new phenomena apparently exclusive to non-Hermitian systems, to read more on this please refer to \cite{EigenspaceEPs} and \cite{NHQuantumHall}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Project statement}\label{MINE}
-We are interested in understanding the dynamics of quantum mechanical super fluids in non-Hermitian traps. 
-Our ultimate goal in this project is the experimental observation of the dynamics of a Bose-Einstein condensate in a three-dimensional Hermitian potential as a quench transforms the potential into a \PT-symmetric trap in the shape of an inverted quartic in one dimension, with a potential extension into a non-Hermitian \PT-symmetric trap in three-dimensions. In section \ref{EPs} we described the well known parametric family of \PT-symmetric Hamiltonians in \ref{eq:3.1}. As explained previously these Hamiltonians have unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT-symmetry when $\epsilon < 0$. The particular Hamiltonian that we use in my project occurs when we let $\epsilon = 2$ in \ref{eq:3.1}. Our Hamiltonian is 
+We are interested in understanding the dynamics of quantum mechanical super fluids in non-Hermitian traps. Our ultimate goal in this project is to fully develop a \PT-symmetric model describing the evolution of a Bose-Einstein condensate after a quench transforms an initial three-dimensional Hermitian potential into a non-Hermitian \PT-symmetric trap in the shape of an inverted quartic in one dimension. We would also potentially extend this model into a non-Hermitian \PT-symmetric trap in three-dimensions. 
+
+In section \ref{EPs} we described the parametric family of \PT-symmetric Hamiltonians in \ref{eq:3.1}. As explained previously, these Hamiltonians have unbroken \PT\:symmetry when $\epsilon \geq 0$ and broken \PT-symmetry when $\epsilon < 0$. The particular Hamiltonian that we use in my project occurs when we let $\epsilon = 2$ in \ref{eq:3.1}. Our Hamiltonian is 
 \begin{equation}\label{eq:6.1}
-\hat{H} = \hat{p}^2 - \hat{x}^{4};
+\tilde{H} = \hat{p}^2 - \hat{x}^{4};
 \end{equation}
-this Hamiltonian is interesting because even though it possesses an upside-down potential, it nevertheless appears to have a fully real and bounded below energy spectrum\cite{UpsideDownPotentials} as can be seen in figure \ref{fig:parametricfam}. Our present aim is to simulate the dynamics of a single trapped state after we implement a quench that would instantaneously change the trapping potential from a harmonic oscillator trap to an inverted quartic potential exactly like the one in the Hamiltonian in \ref{eq:6.1}.
+this Hamiltonian is interesting because even though it possesses an upside-down potential, it nevertheless appears to have a fully real and bounded below energy spectrum\cite{UpsideDownPotentials} as can be seen in figure \ref{fig:parametricfam}. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Quantum simulation: \PT-symmetric time evolution}
-Here I include some of the progress I made in my work on the dynamics under the \PT-symmetric framework. 
+Currently I am working in simulating the dynamics of a single trapped state after we implement a quench that would instantaneously change the trapping potential from a harmonic oscillator trap to the potential present in the Hamiltonian of equation \ref{eq:6.1}.
 
-For $\tilde{H}$ whose eigenvectors span the Hilbert space $\mathcal{H}$\cite{Bender_2007}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Quantum simulation:\\ Time evolution}
+Initially, my simulations were not fully informed by the \PT-symmetric framework, since originally I did not understand the importance of the \CPT\:inner product.
+One of my simulations relied in the fourth-order Runge-Kutta algorithm (RK4). A few frames from my RK4 simulation are included in figure \ref{fig:RK4}, where an interesting re-focusing effect appears to occur. Originally we were unsure if this effect was actually occurring physically of whether it was an artefact of the numerics.
+\begin{Figure}
+\centering
+\includegraphics[width=.8\linewidth]{probability_density_in_negquartic.pdf}
+\captionof{figure}{Eight frames in a time evolution simulation written using RK4. The figure should be read from top left to bottom right. This simulation implements time evolution by repeatedly solving the Schr\"{o}dinger equation for the Hamiltonian in \ref{eq:6.1} using the iterative RK4 algorithm. From the earliest frame (top left) to the latest frame (bottom right) a refocusing of the state can be seen as the state is allowed to evolve in the negative quartic potential trap.}
+\label{fig:RK4}
+\end{Figure}
+After reading the literature described in detail in section \ref{EqHH} we were interested in understanding the behaviour of states trapped in the Hermitian Hamiltonian with an equivalent energy spectrum to the non-Hermitian Hamiltonian in \ref{eq:6.1}\cite{HHEquivalent, Equivalent_withanomaly, ParityAnomaly} 
+\begin{equation}\label{eq:6.2}
+\hat{H} = \frac{\hat{p}^2}{2m} + 4g\hat{x}^4 - \sqrt{2g}\hat{x},
+\end{equation}
+\begin{Figure}
+\centering
+\includegraphics[width=\linewidth]{EHH_sim.pdf}
+\captionof{figure}{Three frames from a time evolution simulation written using a unitary operator made using the Hermitian Hamiltonian  in \ref{eq:6.2}. The state trapped in this potential simply shifts back an forth along the x-axis but no other phenomena are observed as time passes.}
+\label{fig:EHH_sim}
+\end{Figure}
+The simulation in figure \ref{fig:EHH_sim} gave us some insight in how equivalent energy spectra of certain non-Hermitian Hamiltonians and certain Hermitian Hamiltonians does not guarantee that the time evolution of states under these Hamiltonians will be equivalent or even similar.
+\section{Quantum simulation:\\ \PT-symmetric time evolution}
+% In the process of investigating the apparent refocusing effect present in the simulation presented in figure \ref{fig:RK4} 
 
-% %Investigating a potential quench 
-% \begin{Figure}
-% \centering
-% \includegraphics[width=.8\linewidth]{probability_density_in_negquartic.pdf}
-% \captionof{figure}{}
-% \label{fig:}
-% \end{Figure}
 
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusion}\label{Conclusion}
 
 % Exact \PT-symmetry of Hamiltonians is understood to be equivalently useful at describing quantum mechanical systems as the mathematical postulate of Dirac Hermiticity
@@ -345,7 +362,7 @@ For $\tilde{H}$ whose eigenvectors span the Hilbert space $\mathcal{H}$\cite{Ben
 %
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Appendix}\label{appendix}
 \section{Bi-orthogonality and completeness}\label{Biorthogonal}
 In the case of a \PT-symmetric Hamiltonian $\tilde{H}$, it is possible for two (or more) complex eigenvalues to cross. At the crossing point the eigenvalues are degenerate and this is accompanied by the coalescence of the eigenstates of $\tilde{H}$. If eigenstates of $\tilde{H}$ become degenerate this implies that they lose completeness\cite{Brody_2013}. This special situation is associated with a branch point in the complex energy plane and is commonly termed an ``exceptional point"\cite{Moiseyev}. Moreover, sufficiently close to the branch point the eigenfunctions of the coalescing eigenvalues are nearly self-orthogonal.
@@ -366,8 +383,11 @@ The assumed diagonalizability condition of $\tilde{H}$ may be viewed as a physic
 where $n$ and $a$ are the spectral degeneracy levels, $d_n$ is the degree of degeneracy of $E_n$ and $\hat{\mathbb{I}}$ is the identity operator\cite{Pseudo-HermiticityIII}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Equivalent Hamiltonians with distinct symmetries}\label{}
-In parallel to the work of Bender is the research of Mostafazadeh who introduced the notion of pseudo-Hermiticity in \cite{Mostafazadeh}. A Hamiltonian is said to be pseudo-Hermitian with respect to a positive-definite, Hermitian operator $\eta$ if it satisfies
+\section{Equivalent Hamiltonians with distinct symmetries}\label{EqHH}
+In parallel to the work of Bender is the research of Mostafazadeh who introduced the notion of pseudo-Hermiticity in \cite{Mostafazadeh, Pseudo-HermiticityII, Pseudo-HermiticityIII, Mostafazadeh2, Mostafazadeh_2002}. Mostafazadeh has published works discussing his scepticism of the application of \PT-symmetry to quantum mechanics such as in reference \cite{Critique}. He argues that importance of the Hermitian representation of the \PT-symmetric (and other) unitary quantum systems cannot be undermined by a demonstration that certain calculations take a simpler form in the non-Hermitian representation of these systems. Since there are other physically relevant calculations that are at least as difficult in the non-Hermitian representation as they are in the Hermitian representation\cite{Mostafazadeh_comment}.
+
+\subsection{Pseudo-Hermiticity}\label{pseudo}
+A Hamiltonian is said to be pseudo-Hermitian with respect to a positive-definite, Hermitian operator $\eta$ if it satisfies
 \begin{equation}\label{eq:8.5}
 \tilde{H}^{\dagger}  = \eta^{-1}\tilde{H}\eta.
 \end{equation}
@@ -397,7 +417,7 @@ Mostafazadeh \cite{Mostafazadeh}, conjectures that because \CPT-symmetry satisfi
 In general this transformation is extremely complicated and so it is quite impractical to perform. Hence, while the mapping from \PT-symmetric to Hermitian Hamiltonians is of great theoretical interest, it does not have much practical value\cite{MakingSense}. Another important fact is that this kind of transformation is a similarity and not a unitary transformation. Thus, while the eigenvalues of both Hamiltonians are identical, the relationships between
 vectors are changed; pairs of vectors that are orthogonal are mapped into pairs of vectors that are not orthogonal\cite{MakingSense}\cite{Bender_2007}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Equivalent PT-symmetric and Hermitian quantum properties}\label{Dict}
 In the case of unbroken \PT-symmetry of a Hamiltonian $\tilde{H}$ with eigenfunctions $\psi_n$ then the \PT\:operator eigenfunctions are: $\chi_{n}(x) = e^{-i\alpha/2}\psi_n(x)$\\
 
@@ -440,11 +460,9 @@ In the case of unbroken \PT-symmetry of a Hamiltonian $\tilde{H}$ with eigenfunc
   \hline
 \end{tabularx}
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Stokes wedges and boundary conditions}\label{Stokes}
-The boundary conditions for the eigenvalue problem corresponding to the Hamiltonians in equation \ref{eq:3.1} depend on the deformation parameter $\epsilon$\cite{MakingSense}. Since the eigenvalue problem can be conceptualised as a harmonic oscillator that has been deformed into the complex x-plane\cite{AnalyticContinuation}.
-The integration contour we choose to use should be located within two angular sectors in the complex x-plane. These sectors are known as \emph{Stokes wedges}\cite{MakingSense}. In general these wedges are centred about the origin in the complex x-plane and we can define their orientation in terms of $\mathrm{Arg}(x) = \theta$.
+The boundary conditions for the eigenvalue problem corresponding to the Hamiltonians in equation \ref{eq:3.1} depend on the deformation parameter $\epsilon$\cite{MakingSense}. Since the eigenvalue problem can be conceptualised as a harmonic oscillator that has been deformed into the complex x-plane\cite{AnalyticContinuation}. The integration contour we choose to use should be located within two angular sectors in the complex x-plane. These sectors are known as \emph{Stokes wedges}\cite{MakingSense}. 
 The solutions to the differential equation are analytic functions of $x$\cite{BenderOrszag}, therefore the eigenvalues are independent of the choice of contour (see figure \ref{fig:stokes1}) in the complex x-plane\cite{PTsymmetricQM}\cite{Sorrell}. However, it is crucial that the end points of the contour are located within the stokes wedges, and that solutions to the differential equation must be equal to zero at both ends of the contour in the stokes wedges\cite{Faria1}. 
 \begin{Figure}
 \centering
@@ -453,9 +471,35 @@ The solutions to the differential equation are analytic functions of $x$\cite{Be
 \label{fig:stokes1}
 \end{Figure}
 Stokes wedges must be non-adjacent in order to describe the boundary conditions of a valid coordinate-space eigenvalue problem. If the wedges are adjacent they would not represent a continuous region within the same Riemann sheet.
-Determining the locations of Stokes wedges does not require that we solve the differential equation exactly but it can be done using asymptotic approximations\cite{PTsymmetricQM}.
+Determining the locations of Stokes wedges does not require that we solve the differential equation exactly but it can be done using complex asymptotic approximations\cite{PTsymmetricQM}. One of such methods is the WKB approximation. 
 
+\subsection{Complex WKB approximation}\label{WKB}
+The WKB method works only for the eigenvalue problems with $\epsilon \geq 0$ because the sub-dominant eigenfunctions vanish exponentially in two \emph{Stokes wedges} in the complex x-plane\cite{PTsymmetricQM}. The approximate solutions will contain either growing or decaying exponential terms. The nomenclature of the solutions depends on these exponential terms. Solutions are called either dominant or sub-dominant depending on these growing or decaying exponential terms respectively. 
 
+The \emph{Stokes wedges} for the Hamiltonians in \ref{eq:3.1} are always centred about the origin of the complex x-plane. Their angular orientation of these wedges in the complex x-plane can be described by the argument of the complex variable $x = re^{i\theta}$.
+
+The limits of integration used in the WKB technique are analogous to classical turning points. i.e. the total energy of the system obeys the equation $E = x^2 (ix)^{\epsilon}$ and this equation has many complex solutions. However, since we are interested in $E$ being real, we are concerned with what happens to two turning points that lie on the real axis at $\pm \sqrt{E}$ when $\epsilon = 0$ as $\epsilon$ increases\cite{PTsymmetricQM,MakingSense}.
+The form of the turning points I used to find the eigenvalues for \ref{eq:3.1} when $\epsilon>0$ are
+\begin{align}
+x_{-}& = 
+E^{\frac{1}{\epsilon + 2}}
+e^{i\theta_{-}}
+&\mathrm{and}&
+&x_{+} = E^{\frac{1}{\epsilon + 2}} e^{i\theta_{+}},
+\end{align}
+where the angles are respectively
+\begin{align}
+\theta_{-}& = \frac{4 + 3\epsilon}{4 + 2 \epsilon} \pi
+&\mathrm{and}&
+&\theta_{+} = - \frac{\epsilon}{4 + 2 \epsilon} \pi.
+\end{align}
+When $\epsilon$ increases from 0, the turning points move into the complex plane. Notice that these turning points are always symmetric respect to reflections along the imaginary axis. \textbf{This left-right reflection symmetry is the coordinate space realisation of \PT-symmetry}\cite{PTsymmetricQM}.
+As $\epsilon$ increases from 0, a logarithmic branch-point singularity appears at the origin, and as $\epsilon$ continues increasing in the positive direction, it is necessary to introduce a branch-cut running from the origin along the positive imaginary axis. In this cut plane the solutions to equation \ref{eq:3.1} when $\epsilon>0$ are analytic and singled-valued\cite{PTsymmetricQM}.
+\begin{Figure}
+ \centering
+ \includegraphics[width=0.75\linewidth]{Stokes_wedges.pdf}
+ \captionof{figure}{This figure depicts 4 copies of the complex x-plane, each with a branch cut on the positive-imaginary axes, from zero to imaginary infinity, and four distinct instances of \emph{Stokes wedges} (one red and one yellow to differentiate between them) changing as functions of the parameter $\epsilon$ in equation \ref{eq:3.1}. For the cases when $\epsilon > 0$ the opening angles of the sectors decrease and the sectors rotate downward (both changes are respective to the $\epsilon = 0$ case). If $\epsilon = 0$, the angular opening is equal to $\pi/2$ and are centred about the positive-real and the negative-real axis. For the the cases of $\epsilon < 0$ the angular behaviour is opposite to the positive $\epsilon$ values. The wedges get wider and rotate upwards as $\epsilon$ decreases from zero. The changes, get more dramatic for decreasing $\epsilon$ values. In the case of $\epsilon = -1$ the wedges fuse into one along the logarithmic branch cut on the positive-imaginary line. We can describe the topology of this scenario as the logarithmic Riemann surface collapsing onto a single sheet. When this occurs, The spectrum becomes null, meaning that there are no eigenvalues at all\cite{PTsymmetricQM}.}
+\end{Figure}
 
 
 
