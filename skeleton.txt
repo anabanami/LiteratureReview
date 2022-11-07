@@ -1,8 +1,6 @@
-The background experiments and results which are already published;
 
 The theory underlying these techniques at the level that will be required by you in interpreting data to be collected during your project research
 
 (specifically for students undertaking a theoretical project) a detailed discussion of the theoretical/mathematical background to the project together with the demonstration of an awareness of the experimental evidence supporting the theoretical models.
 
-
-    Aspects have not been investigated 
+Aspects have not been investigated 
