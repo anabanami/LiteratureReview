@@ -99,8 +99,8 @@ The \PT\:operator is the anti-linear operator composed of the linear parity oper
 \begin{equation}\label{eq:2.1}
 \begin{split}
 \mathcal{P}:& \quad\hat{x} \rightarrow -\hat{x},\quad \hat{p} \rightarrow -\hat{p},\\
-\mathcal{T}:& \quad\hat{x} \rightarrow \hat{x},\quad\quad \hat{p} \rightarrow -\hat{p},\quad \mathrm{i} \rightarrow -\mathrm{i}
-\end{split}.
+\mathcal{T}:& \quad\hat{x} \rightarrow \hat{x},\quad\quad \hat{p} \rightarrow -\hat{p},\quad i \rightarrow -i.
+\end{split}
 \end{equation}
 Some Hamiltonians may not be symmetric under \PP\:or \TT\:separately, but Hamiltonians that remain invariant under the influence of the \PT\:operator are labelled as \PT-symmetric. 
 A Hamiltonian $\hat{H}$ will possess unbroken \PT\:symmetry if the following conditions are satisfied
@@ -157,7 +157,7 @@ From this definition, relation $(\psi_m(y), \psi_n(y)) = \int dy\:(\mathcal{PT}\
 \mathcal{C} \psi_n(x) & = \int dy\:\mathcal{C}\:\psi_n(y)\nonumber \\
 & = \sum_{m}\psi_m(x)\int dy\:\psi_m(y) \psi_n(y)\nonumber \\
 & = (-1)^n \psi_n(x)
-\end{align}
+\end{align}.
 The \PT\:norm signatures can therefore be interpreted as the ``charge'' of the states, while \CC\: is the operator used to measure this charge~\cite{Bender_2004}. The \CC\: operator commutes with the \PT\: operator, but it does not commute with the parity operator \PP. Notice that \CC\:and \PP\: operators are square roots of $\delta(x-y)$ the unity operator~\cite{ComplexExtension}
 \begin{equation}\label{eq:2.9}
 \mathcal{P}^2 = \mathcal{C}^2 = \mathds{1}, 
@@ -256,20 +256,23 @@ The unitary time evolution of a state $\vec{\psi}$ from time $t = 0$ to a time $
 \vec{\psi}(t) = \hat{U} \vec{\psi}(0).
 \end{equation}
 An interesting feature of \PT-symmetric Hamiltonians has been suggested in ~\cite{Bender_2007}. According to this paper it is possible to obtain arbitrarily fast quantum evolutions using non-Hermitian \PT-symmetric Hamiltonian operators. This is because for such Hamiltonians the path from can be made short by taking advantage of the Hilbert space geometry described by the Hamiltonian's eigenstates. A brief description of this work is described below.
-%>>>MOREEEEEEEE ON GEOMETRYYYYYA brief description of this work is described below.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Faster than Hermitian time evolution?}\label{faster}
-The mechanism described in Ref.~\cite{Bender_2007} is similar to that in general relativity in which the distance between two space-time points can be made small if they are connected by a wormhole. If true, the results in ~\cite{Bender_2007} will have drastic consequences in quantum computation, because it removes the bound on time-optimal unitary operations~\cite{OptimalControl} that is established in quantum mechanics~\cite{Brachistochrone_Mostafazadeh}. However, Bender et al. warn us about the possibility of the existence of quantum protection mechanisms that place a lower bound on the time required to switch Hilbert spaces, which would limit the applicability of a Hilbert-space ``wormhole" to improve quantum algorithms~\cite{Bender_2007}. 
+The mechanism described in Ref.~\cite{Bender_2007} is similar to that in general relativity in which the distance between two space-time points can be made small if they are connected by a wormhole (see Fig.~\ref{fig:HGeo}). If true, the results in ~\cite{Bender_2007} will have drastic consequences in quantum computation, because it removes the bound on time-optimal unitary operations~\cite{OptimalControl} in quantum mechanics~\cite{Brachistochrone_Mostafazadeh}. The quantum mechanical nature of a communication channel imposes specific fundamental restrictions to the rate of transmission and accuracy of reproduction of information~\cite{StatStructure}. In Ref.~\cite{Bender_2007} Bender et al. warn us about the possibility of the existence of quantum protection mechanisms that place a lower bound on the time required to switch Hilbert spaces, which would limit the applicability of a Hilbert-space ``wormhole" to improve quantum algorithms~\cite{Bender_2007}. 
+\begin{Figure}
+\centering
+\includegraphics[width=\linewidth]{geometriesofH.pdf}
+\captionof{figure}{ictorial representation of the two types of Hilbert space geometries and the time evolution from an up state to a down state in a two level system described by two distinct Hamiltonians. In Ref.~\cite{Bender_2007} the shortest possible time in which state $\ket{\psi_i}$ can evolve to state $\ket{\psi_f}$ is shown to be a quantity dependent on $\omega$, which is the energy difference between eigenvalues of the two Hamiltonians. Bender et al. show in their paper that if a constraint is imposed on the $\omega$ values for each Hamiltonian, they will describe very different geometries for each Hilbert space. Ref.~\cite{Bender_2007} shows how a spin-up state $\ket{\psi_i}$ can be transformed arbitrarily quickly to a spin-down state by a general non-Hermitian Hamiltonian because the geometry of its Hilbert space is is hyperbolic. In contrast, the Hilbert space geometry for a general Hermitian Hamiltonian is elliptic, which makes the shortest possible time for evolution in the Hermitian framework non-zero.}
+\label{fig:HGeo}
+\end{Figure}
+A Hilbert space``wormhole" would be obtained if the distance between the up and down states in a two level system is made arbitrarily small as in
+Fig.~\ref{fig:HGeo}. The time evolution under the two Hamiltonians theorized in Ref.~\cite{Bender_2007} occurs very differently, because only in the non-Hermitian Hamiltonian case the Hilbert space can be made so that the initial and final states lie on top of each other.
 
-G\"{u}nther and Samsonov~\cite{Gunther_2008} have interpreted the \PT-symmetric set-up for Ref.~\cite{Bender_2007} as a quantum system consisting of a non-Hermitian \PT-symmetric component and a Hermitian component simultaneously. G\"{u}nther and Samsonov formulate a general recipe for the construction of partially \PT-symmetric quantum
-systems which are not 1:1 equivalent to purely Hermitian systems. Using a strong structural analogy with the
-reference frames for inertial observers in special relativity, they associate \PT-symmetric models in different
+In their investigations, G\"{u}nther and Samsonov~\cite{Gunther_2008} have interpreted the \PT-symmetric set-up for Ref.~\cite{Bender_2007} as a quantum system consisting of a non-Hermitian \PT-symmetric component and a Hermitian component simultaneously. G\"{u}nther and Samsonov formulate a general recipe for the construction of partially \PT-symmetric quantum systems which are not 1:1 equivalent to purely Hermitian systems. Using a strong structural analogy with the reference frames for inertial observers in special relativity, they associate \PT-symmetric models in different
 representations with corresponding measurement frames. They claim that the resultant operators which are Dirac Hermitian
 are connected with non-Dirac-Hermitian operators in another frame. The probabilistic content of the models
 is frame-independent. According to G\"{u}nther and Samsonov their geometric analysis of the equivalence mapping between mutually \PT-symmetric and Hermitian operators demonstrates the agreement of the vanishing passage-time solution proposed in ~\cite{Bender_2007} and the temporal lower bound for Hermitian evolution proposed by Anandan and Aharonov in ~\cite{AnandanAharonov}. 
-
-Despite the potential importance of \PT-symmetric theory, the experimental observation in a genuine quantum system is still missing~\cite{Cartarius}. Therefore the purpose of our research is to determine whether it is possible to observe the dynamical behaviour of a \PT-symmetric quantum in an experiment. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Experiments}\label{Experiments}
@@ -293,8 +296,7 @@ exploit generic properties of EPs offering interesting operational capabilities 
 \section{Topological protection in non-Hermitian Haldane honeycomb lattices}\label{TopoProtecc}
 The work by Res\'endiz-V\'azquez et al. focuses in the possibility of observing topologically protected
 edge states in two-dimensional non-Hermitian Haldane lattices~\cite{Tprotecc}.
-The Haldane model represents a unique system where the quantum Hall effect is contained as an intrinsic lattice-band-structure property, rather than an external effect due to the presence of a strong magnetic
-field~\cite{QuantumAnomalousEffect}. 
+The Haldane model represents a unique system where the quantum Hall effect is contained as an intrinsic lattice-band-structure property, rather than an external effect due to the presence of a strong magnetic field~\cite{QuantumAnomalousEffect}. 
 
 The claim in this paper is that edge states can be observed in the so-called broken PT -symmetric phase. 
 The experiment is done using finite rectangular Haldane ribbon comprising 1860 sites. They present
